@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#141920">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAH0AfQDASIAAhEBAxEB/8QAHQABAQEBAQEBAQEBAAAAAAAAAAgHBgUEAQMCCf/EAFAQAQABAgQBAw0JDgUEAwEAAAABAgMEBQYRBxIhMQgTFxg3QVFTVnSUs9JVYXWBkZOVstMUFRYiMjU4VHF2pbG00TZCcnOhIzNSYiRDgsH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAgMBBP/EACIRAQACAQQDAQEBAQAAAAAAAAABAhEDEhNRMTJBIVJxIv/aAAwDAQACEQMRAD8AssAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGJ9VdxC/BfR/4OZdf5GbZzRNFU0zz2cP0V1e9NX5Mf8A6nphNpisZcmcQ2nrlvxlPynXLfjKflQroDgnrbWunbefZVRgLGDu11UWpxV2qibkUztNVMRTP4u+8b79NM8zoO1m4jePyP0uv2Gcalp+M4vafiyuuUeMp+U65R4yn5Ua9rNxG8fkfpdfsHazcRvH5H6XX7ByW6d326WV1yjxlPynXKPGU/KjXtZuI3j8j9Lr9g7WbiN4/I/S6/YOS3Rvt0srrlHjKflOuUeMp+VGvazcRvH5H6XX7B2s3Ebx+R+l1+wclujfbpZXXKPGU/Kdco8ZT8qNe1m4jePyP0uv2DtZuI3j8j9Lr9g5LdG+3SyuuUeMp+U65R4yn5Ua9rNxG8fkfpdfsHazcRvH5H6XX7ByW6N9ulldco8ZT8p1yjxlPyo17WbiN4/I/S6/YO1m4jePyP0uv2Dkt0b7dLK65R4yn5X7TVFXPTVE/sRp2s3Ebx+R+l1+w6fhtwg4x6B1BTm2SY7IoiranEYa5i7k2sRRE78mqIo7287T0xv088xPYvbPgi09KmH8MJXfuYWzXibNNm9VRE3LdNfLiirbniKto3jfv7Rv4If3atAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHn6gzbA5FkuMznM78WcHg7NV69XPepiN9o8M96I78zEd9EOEtZ1xw40TNyblqnHXuVcmnnjB4SjvR3uanaO9FVVUb9LSOrG4g/dGKtaAyy/vbsTTfzSqieaqvbei1PvRzVT0880+CXTdS5l2ktG6NnNsz1FklrOs3im7dorx1qKrFn/Jbn8bmnn5Uxzc8xE/kvPad9tvyGVp3Tj43PJ8uweUZVhcry+xTYwmFtU2bNunopppjaI9/mh9rwfwz0f5V5F9IWvaPwz0f5V5F9IWvab5hp+PeHg/hno/yryL6Qte0fhno/yryL6Qte0Zg/HvDwfwz0f5V5F9IWvaf6w2rNK4nEW8Ph9S5Nev3a4ot26MfaqqrqmdoiIireZmflMwfj3AHXX5v4TfwJF4qcJuK+ccRc+zTJ8mxF7L8Vja7mHuU5lYoiqieiYpquRMfHEOZ7CfGn3BxP0th/tWU6kxPqzm8xPhcG5uh/sJ8afcHE/S2H+1Ownxp9wcT9LYf7Vzkn+XN89Lg3N0P9hPjT7g4n6Ww/2p2E+NPuDifpbD/anJP8m+elwbm6H+wnxp9wcT9LYf7U7CfGn3BxP0th/tTkn+TfPS4NzdD/AGE+NPuDifpbD/anYT40+4OJ+lsP9qck/wAm+elwb++P+cepMLqLTmd4nJc4v38PjsNVFN63Ri4uRRO0TtNVFU0zO0xzRO8TzTttMLJ6mvRWK0joKjE5rVeqzbNuTicTTdqmZtUbT1u3tPRMRMzPf3qmJ6IdpqTacYdrfdLVAGrQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfJmn3dOWYr72Rh5x3Wa/uaMRMxb67tPJ5UxEzFO+2+0TO276wEh5l1NXEnMsxxOYY/PtN4jFYm7VdvXa8Tfma66pmapn/o9O8y+ftXdf8Auvpn0m/9isQZcVWfHCO+1d1/7r6Z9Jv/AGJ2ruv/AHX0z6Tf+xWIHDU44R32ruv/AHX0z6Tf+xO1d1/7r6Z9Jv8A2KxA4anHCO+1d1/7r6Z9Jv8A2Lg9IZNitO8dMjyLG3LNzE4DUeGsXarMzNFVVOIoiZpmYiZjeO/Efsf9AEO5r+lhT++Fr+ppZ3pFcYTasRjC4oJHha81BTpTR+Z6iuYarFU4CxN2bNNfJmvniNt9p26fA9DbL3T402dtbgPIvE+n0+wdtbgPIvE+n0+wjkojkr2pP4z402dtbgPIvE+n0+wdtbgPIvE+n0+wctOzkr2pP4z402dtbgPIvE+n0+wdtbgPIvE+n0+wctOzkr2pP4z402dtbgPIvE+n0+wdtbgPIvE+n0+wctOzkr2pOeZxXGXW+H0DoXGZ3XNFeLmOs4K1V/8AZfqieT8UbTVPvUyyHtrcB5FYn6Qp9hk3F3iDm3F7VuV4bA5Zdw1mjbD4HAU3OuTVdrmImqZ2jeZnkx3uamPfmZtqxj8ly2pGPyXsdTVonEa+4i3dQ53FWJy/Lr33Xi7lzn+6cRVM1U0TPRP429VXTzRz/lQtTvOS4TaNwmg9D4HIMPNFd6inrmLvUx/3b9W3Lq/ZzREf+tNPgdbCtOu2HaVxAA0WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASh3NP0r6f3wtf1NK4pQ7mn6V9P74Wv6mljq/P9Z3+LihwnVAdxnVHmNX84d3DhOqA7jOqPMav5w0t6qt4Td1KmhdLa3zHP7Wp8r+76MJZsVWI+6LtvkTVNcTO9uqnfojpb72AuE3kp/EcV9oyfqGfzvqjzfDfWrVOz0qxNfCaViYZh2AuEvkp/EcV9odgLhN5KfxHFfaOY6oDjPn3DrWWEyTK8qy3F2b+X0YuqvEcvlRVNy5TMfi1RG21EfLLYtK5hdzbTOV5reooou43B2cRXTR+TTNdEVTEb97eVRFZnGPDsRWZcJ2AuE3kn/EcV9odgLhN5J/xHFfaNPHdlendsdMw7AXCbyT/iOK+0OwFwm8k/4jivtGnhsr0bY6Zh2AuE3kp/EcV9o9PS3CLh5pfPLGdZHpynDY+xv1q7OKv3ORvE0zMRXXMb7TMb7d93g7Fax8d2xAAp0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlDuafpX0/vha/qaVxSh3NP0r6f3wtf1NLHV+f6zv8XFDhOqA7jOqPMav5w7uHCdUB3GdUeY1fzhpb1VbwxPqGfzvqjzfDfWrVOljqGfzvqjzfDfWrVOjR9E6frCPOrZ7quWfAln199UnDnufac+CsL6qlLfVs91XLPgSz6++qThx3PtOfBWF9VS5T3kr7S98Bs0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJQ7mn6V9P74Wv6mlcUodzT9K+n98LX9TSx1fn+s7/FxQ4TqgO4zqjzGr+cO7hwnVAdxnVHmNX84aW9VW8MT6hn876o83w31q1TpY6hn876o83w31q1To0fROn6wjzq2e6rlnwJZ9ffVJw47n2nPgrC+qpS31bPdVyz4Es+vvqk4cdz7TnwVhfVUuU95K+0vfAbNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUO5p+lfT++Fr+ppXFKHc0/Svp/fC1/U0sdX5/rO/xcUOE6oDuM6o8xq/nDu4cJ1QHcZ1R5jV/OGlvVVvDE+oZ/O+qPN8N9atU6WOoZ/O+qPN8N9atU6NH0Tp+sI86tnuq5Z8CWfX31ScOe59pz4KwvqqUt9Wz3Vcs+BLPr76pOHPc+058FYX1VLlPeSvtL3nz3cbg7dc0XMXYoqjppquREwyzqjNXZjkWV4HJ8qvXMNex/LqvX6J2qpt07RyYnpjeZ6Y71PvsCy/Jc6zS1Vfy/Kcwx1uK5prrsYeu5EVbRMxM0xtvtMTt0865vicFr4nCz/vjl/69hvnaf7n3xy/9ew3ztP90c/gpqjyazn0G77J+CmqPJrOfQbvsub5c5J6WXYvWb1HLs3aLlPRvRVEx/w/qjDT+dZ5o/PoxWDrv4LFWKoi9YriaYrjfeaLlPfj3p546Y25pWFkuOozLJ8FmVumaaMXYov0xPPMRVTFUR/yqtsqrbc+2XyzmGA32nG4aJ8HXaf7vplEuM/xDf8AOqvryWth21tq2wFKfzu3KLVE13K6aKY6aqp2iH87OMwl6vrdnFWLlXeppuRMuS449yvO/wDbt+toYd1O/dSwX+ze+pKJticJm2JwqaB+dDi+MmpsTpXRF/HYHmxl+5ThrFc8/IqqiZ5W3vRFW3v7KmcOzOHXX8XhbFUU3sTZt1TzxFdcRM/K/nOY5f8Ar2G+dp/ujGzhs6z7G3rtjD5hmmKn/qXq6KK71c8/TVMRM9Pfl9P4Kao8ms59Bu+yjfPTPknpY33yy/8AXsN87T/c++OX/r2G+dp/ujn8FNUeTWc+g3fZPwU1R5NZz6Dd9k3yck9LMs3bV6jl2rlFymeblUzEx/w/oz7gDgsbl/Duxh8fhMRhb0Yi7VNu/bmiqImrp2nadmgR0LictInL57mNwdqubd3F2KK46aarkRMfFu/zGY5f+vYX52n+6V+OndWzv/Va9VQ53C6b1FicPRiMNkGaXrNymKqLlvCXKqao70xMRtMe/CN85wznU/cYWX98cv8A17DfO0/3Pvjl/wCvYb52n+6OfwU1R5NZz6Dd9l+VaW1PTTNVWnM4ppiN5mcDdiIjwz+Kb5OSelnUVU10RXRVFUT0TE7xL/aVOCmr8y0/q/AZfGIrry3H4ijD3sPVVM0xNcxTFcRPRMTMTvHTG8T3tqr76q2zC623QAKUAAAAAAAAAAAAAAAAAAAAAAAAAAAASh3NP0r6f3wtf1NK4pQ7mn6V9P74Wv6mljq/Gd/i4ocJ1QHcZ1R5jV/OHdw4TqgO4zqjzGr+cNLeqreGJ9Qz+d9Ueb4b61ap0sdQz+d9Ueb4b61ap0aPonT9YR51bPdVyz4Es+vvqk4cdz7TnwVhfVUpb6tnuq5Z8CWfX31ScOO59pz4KwvqqXKe8lfaWO9VV+esj82u/Wh9vU86q07kejsZhM3zjCYK9XmFdym3dq5MzT1u3ET+zeJj4nxdVV+e8j82u/WhnOl9D6o1NgbmOyPKpxeHt3JtV1xft0bV7RMxtVVE9ExO/RzkzMW/ETMxdTvZE0P5TZd84dkTQ/lNl3zieOxJxC8np9Kse2diTiF5PT6VY9tW63St9unk8TMZhcw17nONwV+3fw17EzVbuUTvTXG0c8Sqrh//AID0/wDBmG9VSj3NsvxmU5lfy7MLPWcVh65ou0cqJ5M9+N4nafimVhcP/wDAen/gzDeqpc0/pp+Ze7PQiTGf4hv+dVfXlbc9CJs6ou4PUWNt37c03bOKriuirmmJiud4n5HdT4anxbI5nQOs8o1llUYvLrnIv0bRfw1cx1y1Pv8AhjwVRzT707xHTLictInLiuOHcrzz/bt+toYd1O/dRwX+ze+pLSuqC1rlGF07jNKWq/unMcXFHXKKJjbD0xVFW9U+Gdvyenn3naNt856nKzducTMPXRRNVNrDXaq5iOamOTyYmfjmI+Nnaf8AqGVpzeFRMq6p7ue4T4Tt+ruNVZV1T3c9wnwnb9XcXbw0t4Z51O2e5PkWf5nezjMbGCt3cLFNFV2rkxVPLjm/bs27si6H8psu+cSvpfTOeanxN7DZHgZxd2zRFyumLtFHJiZ233qmInn8DoexJxC8np9Kse2zraceGVbTEeFD9kTQ/lNl3zh2RND+U2XfOJ47EnELyen0qx7Z2JOIXk9PpVj21brdK326VHk2a5dnOCjG5XjLWLw01TTFy3O9MzHTD7nD8FMkzTT2hbOW5xhfubFU37tU25rpq2iZ3id6ZmP+XbraROYSbx07q2d/6rXqqG08OdcaRwGhMlweM1BgbGIs4Sii5brubTTMRzxMMW46d1bO/wDVa9VQ86NBatnTtOoKMmu15bNmL8XqLtFU8if83Jirlbbc/RzRz80QyzMTLHMxafxTXZE0P5TZd84/hmHEHRNeAxFujUmXTVVaqppiLvPMzEpHdflnDPW2Z4Czj8Bk9GJw1+iK7dyjGWJiqJ//AHzT3tp546HYvM/HeSZ+PI0REzrTI4iN5nMcPt85StHvMN4RcIsyy3PLGfanptWZwlfLw+EoriuZrjorqmmeTtE88REz0RvtttO4yqkTEfqtOJiP1+gLaAAAAAAAAAAAAAAAAAAAAAAAAAAAAPxD2afpX0/vha/qaVwsg4j8HsLmnEPIdd6fpt4bH4XNcLfzLD81NGJt03aZquR4K4iJmY/zbeH8rPUrMx+IvWZ8NghwnVAdxnVHmNX84d24TqgO4zqjzGr+cKt6u28MT6hn876o83w31q1Gau1TkOk8orzXUOY2cBhqeaJuTvVXP/jTTHPVPvQifg3xNu8NsNn17B5dTjcfmFq1bw83KtrVuaZrmaqtuerpjmiY7/PG3P8A3yLTvEjjbqWvMb96/iqIq5N3H4qZow2GjpmimIjaP9NETPPvMRvMsKamK4jyzrfEYh83HbXdniVr21muWZbfw9i1hqMFhqK5iq5diK66oqmI5omZr25MTPRHhWzoOzew2h8hw+ItXLV61luGouW66Zpqoqi1TExMTzxMTG2zkeE3B3S2gLdGJs2vvlnPJ/Gx+IojlUzttMW6ei3H7N559pmWk8zSlJicyqlZj9lP/VVfnrI/Nrv1odP1Ln+Bcf8ACdfqrT6ONXD3Ota5hluIyrFYCzThbVdFcYmuumZmZiY25NM+B7PBnSOZaM01ictzS/hL167jKr9M4aqqqmKZoop2nlUxO+9M97wOxE7skRO7LuQGjRIHF3ul5953V/KFRcP/APAen/gzDeqpZHrrg5qbPdX5nm+Ex2T27GLvzct03btyK4idumIomIn9ky2bS+BvZXpvK8sxFVuq9hMHasXJomZpmqiiKZmJmN9t478QzrExMs6RMTL05ZvxZ4Y4LVlqvMsui3hM6pp/7nRRiIiOaK9uie9FX84220g2XMZXMZRhhMRqDRWpprtzfy3M8JXtXRVG3N34mOiqmY/bExtMd6Wmak454zGaYs4bKsDOBza7TNOJvzMTRa729qOmZnp3n8no5+mNU4iaCyfWmCijGR9zY21G1jGW6d66PemP81O/en4pjeWV5dwCzWcxiMxzzBUYGKvxqsPTXVcqjwRFURET7+87e+z22jwymto8eGd6M0rnetc7qw2BpquVVVcvE4q7MzTbiZ3mqqrpmZnfm55n5ZiotBaNyjR2Uxg8tt8u9XETiMTXEdcvT4Z8EeCI6P27zPoaZyLLNOZTayzKcLRh8Pb6dueque/VVPfmfD//ADZ6vQqtcLrSIIZX1TlFVXDzD1UxMxTmVuavejkXI3+WYan4HmalyXA6gyXFZRmVua8NiaOTVtzVUz0xVE96YnaY/YqYzCrRmE3cDNW5PpHOswxWc3L1Fq/h4t0TbtzXO/KieeI6OZrnZr0N+sY70WWfZjwE1DTi64y7OMru4beeRViJrt17e/FNNUf8vn7Aur/dLIvn7v2bON0R4ZRviPDSezXob9Yx3osnZr0N+sY70WWbdgXWHulkfz937M7AusPdLI/n7v2bubu5v03rSeocu1Pk9Oa5VXcqw1VVVETXRNM7xO080vYcjwn01jtJ6PtZPmN3D3cRRerrmrD1TNG1U7xzzETv8TroX8aRlJnHTurZ3/qteqoUXwp7m+QeY2/5M24k8I9Sak1tmOd4HG5Tbw2Jqom3Reu3Irjk0U0zvtRMf5Z7/Q1fRWV4jJNJZXlOKqtV38JhqLVdVuZmmZiNpmJmInb4k1iYmUVid0sZ428LZwc39S6aw/8A8XnrxmDoj/td+a6Ij/L35iOjp6OjkuEvETGaMx/3NieuYjJr9e96xHPNqf8Azo8E+GOife5pirJiNudi3ETgnOZ5tVmOlsTg8FF+ZqvYW/yqbdNXfmiaYnaP/Xbb4tojlqzE5hy1Zicw6jL+MGjMfmGGwOHv4yb2Ju02rcVYaYjlVTERvPg3loUdCe9O8EtV5dqDLswvY/JarWGxVq9cii9dmZimuKpiIm308yg+iFVmfq6zP1+gKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS4rjfgcZmXCjUOAy/C3sXir+Emi1Zs0TXXXO8c0RHPLtRyf2HJjKYuEXU289nNuINfgqoyqxX62un6tM+D8bphSmXYHB5bgbWBy/C2cJhbNMUWrNmiKKKIjvREc0Q+klNaRWPxytYgAWoAAAAAAAAAAAAAAOZlXVE6mzrJ8pyLItP42vL8fqHM7eBjGUxvVYomYiqafBO9VMb9MRvttO0xz+mbOW6K4sYPIrfFzNsder2sY3J8265iar125TFVvkVbRTRM8qKt+eeaI3nedo3YnCZt+t1fnM8/UdddrT+Y3LddVFyjC3aqaqZmJpmKJ2mJ7yO8s1NFrhlTn9PFrVVOs7dze1lc467ctVzF2KYiaZjniaOfaZmO9MT0Fr7SbYWobvN0viMfi9M5Vis0sdYzC9g7NzFW9tuRdmiJrjbvbVTMMVw+GzvixxS1hl+I1bnmRZPpu/RhMNhssv9ZquXJmuJrqnv89uqf2VRETG079m2CZw30ZP1Ouo88zLCaj01qDH15ljdN5pXgYxtz8u9RE1UxNXhneirnmZmYmOnbef8cZM0zPA8V+GGEweY4vDYbGY7E04mzav1UUX4jrO0V0xO1URvPT4Z8JujGXc/mWt9JLJc2zTMqOqmyjKaMxxdOXXNOVXasJF+qLNVzrl2OXNG+01bREb+9Hge9x8xuMy/hBqLG4DF4jCYq1h6Zt3rFyq3XRPXKY3iqmd4naZN34Z/Hd8z9SHl2pbuW2tG4/SPEzUuoNS47E4W3mGTYrFXL9mIro3u07VRttFX4vPvMb7xPNurvvFbbnInL9AUoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwfGfQt3XOnsLay/H05fnGW4qjGZdiaomaaLtPeq96ebn70xE8/RPEzw64l59rLTWptV4/S0XMnx9F6u3gKK6Ju2425VdVU0b1V/i0xETtTG07bb7NyEzWJnKdsTOXx5xhrmMynGYS1NMXL9iu3TNXNETVTMbz73P77DrPA/NrHCfJcqwmKyfC6xybMJxuGzC3NfW5nrs1RTVXyOXMRE0z+TPPTHe3lvp8ZNYl2YiXzYD7rnA2Jx1NmnFzbp6/FmqarcV7RyopmYiZp332mYjm7zJs70DrzINe5zqjhvmmS27ee8mrH4PNKa+TTdjfaumaYmZ55qnn2/KnmmNttiHZiJJhwfBnQt7RGSY2MyzCnMs6zXF143McTRTNNNVyrvUx4I3md5iN5qno5oj5uM+hs51XVkOcaazDDYLPMhxc4nCVYqJm1XFXJ5VNW0TMfkU96ebfo33jRYJc2xjBiMYZRw+0NrGeJF7X2vsxym7mFOB+4cJhctivrdujlbzMzVETvz1c3P+XPPG0Q6zixp3G6t4eZxp3LruHtYvG2Yot1YiqYtxMV0zzzTEzEbRPREur7xBERjBiHL6A0lgNN6ayfCV5dllGZ4PAWcPiMTh7FMTcrptxTXMVcmKpiZiZ5+nfndQDvgiAB10AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k=">
+<title>SiteRunner Live — My Shifts</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --dk:#141920;--mid:#1e2730;--lt:#4a6741;--acc:#ff8040;--acc-light:#e8f5ea;
+  --bg:#f4f6f4;--bg2:#ffffff;--bg3:#f0f4f0;
+  --txt:#1a2a1a;--txt2:#4a5a4a;--mut:#7a907a;
+  --bdr:#c8d8c8;--bdr2:#a8c0a8;
+  --danger:#c0392b;--danger-bg:#fdf0f0;
+  --green:#1a7a3a;--green-bg:#fff3ee;--amber:#d4870a;
+  --radius:8px;--radius-lg:12px;--shadow:0 2px 12px rgba(0,0,0,.08);
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--txt);font-size:14px;min-height:100vh}
+button{font-family:inherit;cursor:pointer;border-radius:var(--radius);font-weight:600;font-size:14px;padding:10px 18px;transition:all .15s;display:inline-flex;align-items:center;gap:6px;border:none}
+.btn-p{background:var(--mid);color:#fff;width:100%;justify-content:center;padding:14px;font-size:15px}
+.btn-p:hover{background:var(--lt)}
+.btn-s{background:var(--bg2);border:1px solid var(--bdr2);color:var(--txt);padding:8px 14px;font-size:13px}
+.btn-d{background:var(--danger-bg);border:1px solid #e8b0aa;color:var(--danger);padding:6px 12px;font-size:12px}
+input{background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:12px 14px;font-size:16px;font-family:inherit;outline:none;width:100%;transition:border-color .15s}
+input:focus{border-color:var(--acc);box-shadow:0 0 0 3px rgba(61,122,74,.1)}
+
+/* Auth screens */
+.auth-wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;background:#141920;position:relative;overflow:hidden}
+.auth-wrap::before{content:"";position:absolute;top:-40%;left:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(255,85,0,.12) 0%,transparent 70%);pointer-events:none}
+.auth-wrap::after{content:"";position:absolute;bottom:-30%;right:-10%;width:60%;height:60%;background:radial-gradient(circle,rgba(255,85,0,.07) 0%,transparent 70%);pointer-events:none}
+.auth-brand{text-align:center;margin-bottom:32px;position:relative;z-index:1}
+.auth-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(20px);border-radius:20px;padding:36px 32px;width:100%;max-width:400px;position:relative;z-index:1}
+.auth-card input{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;color:#fff;padding:14px 16px;font-size:15px;font-family:inherit;width:100%;outline:none;margin-bottom:12px;transition:border .15s}
+.auth-card input::placeholder{color:rgba(255,255,255,.3)}
+.auth-card input:focus{border-color:#ff5500;background:rgba(255,85,0,.06)}
+.auth-logo{text-align:center;margin-bottom:16px}
+.auth-title{font-size:13px;font-weight:600;color:rgba(255,255,255,.5);text-align:center;margin-bottom:24px;letter-spacing:.3px}
+.auth-sub{font-size:13px;color:rgba(255,255,255,.4);text-align:center;margin-bottom:24px;line-height:1.5}
+.auth-btn{width:100%;margin-top:4px;padding:15px;background:#ff5500;color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;transition:all .15s;letter-spacing:.5px}
+.auth-btn:hover{background:#cc4400;transform:translateY(-1px)}
+.auth-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.auth-powered{text-align:center;margin-top:24px;font-size:10px;color:rgba(255,255,255,.25);letter-spacing:.5px;position:relative;z-index:1}
+.auth-msg{font-size:13px;text-align:center;margin-top:12px;min-height:18px;font-weight:600;padding:10px;border-radius:8px}
+.auth-msg.success{background:var(--green-bg);color:var(--green)}
+.auth-msg.error{background:var(--danger-bg);color:var(--danger)}
+
+/* Top bar */
+.topbar{background:linear-gradient(90deg,#141920 0%,#1e2730 100%);color:#fff;padding:0 16px;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:2px solid rgba(255,85,0,.25);box-shadow:0 2px 16px rgba(0,0,0,.3)}
+.topbar-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px}
+.topbar-user{font-size:12px;color:#ffb380;display:flex;align-items:center;gap:10px}
+.signout-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:4px 10px;font-size:11px;border-radius:4px;cursor:pointer;font-family:inherit;font-weight:600}
+.signout-btn:hover{background:rgba(255,255,255,.2)}
+
+/* Nav tabs */
+.nav-tabs{background:var(--bg2);border-bottom:1px solid var(--bdr);display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.nav-tab{padding:12px 18px;font-size:13px;font-weight:600;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .15s;flex-shrink:0}
+.nav-tab.active{color:var(--mid);border-bottom-color:var(--mid)}
+
+/* Main */
+.main{padding:16px;max-width:700px;margin:0 auto}
+.card{background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius-lg);margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow)}
+.card-hdr{padding:12px 16px;border-bottom:1px solid var(--bdr);display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.card-body{padding:12px 16px}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700}
+.empty{text-align:center;padding:48px 20px;color:var(--mut);font-size:13px;line-height:1.8}
+.empty-icon{font-size:48px;margin-bottom:12px}
+.section-label{font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+.shift-time{font-size:18px;font-weight:800;color:var(--mid)}
+.shift-date{font-size:13px;color:var(--mut);margin-top:1px}
+.info-row{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin-top:6px}
+.crew-chip{display:inline-flex;align-items:center;gap:6px;background:var(--bg3);border:1px solid var(--bdr);border-radius:20px;padding:3px 10px;font-size:12px;margin:3px}
+.crew-chip.me{background:var(--acc-light);border-color:var(--acc);color:var(--mid);font-weight:700}
+.stat-box{background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--radius);padding:12px 16px;text-align:center}
+.stat-num{font-size:26px;font-weight:800;color:var(--mid)}
+.stat-lbl{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+
+/* Loading */
+.loading{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:var(--bg)}
+.loading-dots{display:flex;gap:6px}
+.loading-dot{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:pulse 1.2s ease infinite}
+.loading-dot:nth-child(2){animation-delay:.2s}.loading-dot:nth-child(3){animation-delay:.4s}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.7)}}
+
+/* Today hero */
+.today-hero{background:linear-gradient(135deg,var(--dk) 0%,var(--mid) 100%);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px;color:#fff}
+.today-day{font-size:24px;font-weight:800;line-height:1.1}
+.today-date{font-size:13px;color:#a8c8a8;margin-top:2px}
+.today-time{font-size:28px;font-weight:800;color:var(--acc);margin-top:8px}
+</style>
+</head>
+<body>
+
+<div id="root">
+  <div class="loading">
+    <div style="width:60px;height:60px;background:var(--dk);border-radius:10px;display:flex;align-items:center;justify-content:center">
+      <svg width="36" height="36" viewBox="0 0 36 36"><rect width="36" height="36" rx="5" fill="#0a1410"/><text x="18" y="26" text-anchor="middle" fill="#ff8040" font-size="22" font-weight="800" font-family="Arial">T</text></svg>
+    </div>
+    <div style="font-weight:700;color:var(--dk);font-size:15px">Loading...</div>
+    <div class="loading-dots"><div class="loading-dot"></div><div class="loading-dot"></div><div class="loading-dot"></div></div>
+  </div>
+</div>
+
+<script>
+const SB_URL="https://nfeqiuqxlztlzrjjmvhl.supabase.co";
+const SB_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mZXFpdXF4bHp0bHpyamptdmhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzNTk3NDAsImV4cCI6MjA5NDkzNTc0MH0.RplRLIyOEOCrmyiPIcSB3i4U0veESbS5XgIXTHPNHcY";
+const ADMIN_EMAILS=["drew@tavergroup.com","maddie@tavergroup.com","kevin.calitz@goanna.group"];
+
+let session=null;
+let profile=null;
+let myShifts=[];
+let myTimesheets=[];
+let currentView="today";
+
+// ── Supabase Auth helpers ─────────────────────────────────────────────
+async function sbAuth(path,body){
+  const r=await fetch(`${SB_URL}/auth/v1/${path}`,{
+    method:"POST",
+    headers:{"apikey":SB_KEY,"Content-Type":"application/json"},
+    body:JSON.stringify(body)
+  });
+  return r.json();
+}
+
+async function sbGet(path,token){
+  const r=await fetch(`${SB_URL}/rest/v1/${path}`,{
+    headers:{"apikey":SB_KEY,"Authorization":"Bearer "+(token||SB_KEY),"Content-Type":"application/json"}
+  });
+  if(!r.ok)throw new Error(await r.text());
+  return r.json();
+}
+
+async function getSession(){
+  const stored=localStorage.getItem("taver_staff_session");
+  if(!stored)return null;
+  try{
+    const s=JSON.parse(stored);
+    // Check if token is still valid (expires_at is unix timestamp)
+    if(s.expires_at&&Date.now()/1000>s.expires_at-60){
+      // Try to refresh
+      const ref=await sbAuth("token?grant_type=refresh_token",{refresh_token:s.refresh_token});
+      if(ref.access_token){
+        localStorage.setItem("taver_staff_session",JSON.stringify(ref));
+        return ref;
+      }
+      localStorage.removeItem("taver_staff_session");
+      return null;
+    }
+    return s;
+  }catch{localStorage.removeItem("taver_staff_session");return null;}
+}
+
+function ds(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;}
+function fmt(d){return d.toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"});}
+function fmtFull(d){return d.toLocaleDateString("en-AU",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});}
+
+// ── Load staff's shifts ───────────────────────────────────────────────
+async function loadMyData(token,staffName){
+  try{
+    // Load all jobs and find shifts where this person is listed
+    const jobs=await sbGet("jobs?select=*",token);
+    const shifts=await sbGet("shifts?select=*&order=date",token);
+    const personnel=await sbGet(`personnel?select=*`,token);
+
+    // Find all personnel entries matching this person's name
+    const myName=staffName.trim().toLowerCase();
+    const myPersonnel=personnel.filter(p=>p.name&&p.name.trim().toLowerCase()===myName);
+    const myShiftIds=new Set(myPersonnel.map(p=>p.shift_id));
+
+    // Build shift objects with job context
+    const result=[];
+    myShiftIds.forEach(shiftId=>{
+      const shift=shifts.find(s=>s.id===shiftId);
+      if(!shift)return;
+      const job=jobs.find(j=>j.id===shift.job_id);
+      if(!job)return;
+      const myEntry=myPersonnel.find(p=>p.shift_id===shiftId);
+      const allCrew=personnel.filter(p=>p.shift_id===shiftId);
+      result.push({
+        job:{id:job.id,name:job.name,jobNumber:job.job_number||"",po:job.po||"",client:job.client||"",
+          siteAddress:job.site_address||"",mapLink:job.map_link||"",
+          clientContact:job.client_contact||"",clientPhone:job.client_phone||"",
+          color:job.color||"#2d7a4a",status:job.status||"confirmed"},
+        shift:{id:shift.id,date:shift.date,dayLabel:shift.day_label,startTime:shift.start_time,endTime:shift.end_time},
+        myEntry:{role:myEntry?.role||"",shiftStart:myEntry?.shift_start||shift.start_time,shiftEnd:myEntry?.shift_end||shift.end_time},
+        crew:allCrew
+      });
+    });
+
+    // Sort by date
+    result.sort((a,b)=>a.shift.date.localeCompare(b.shift.date));
+    return result;
+  }catch(e){console.error("loadMyData error:",e);return [];}
+}
+
+async function loadMyTimesheets(token,staffName){
+  try{
+    const r=await fetch(`${SB_URL}/storage/v1/object/list/timesheets`,{
+      method:"POST",
+      headers:{"apikey":SB_KEY,"Authorization":"Bearer "+token,"Content-Type":"application/json"},
+      body:JSON.stringify({limit:1000,offset:0,prefix:""})
+    });
+    if(!r.ok)return[];
+    const files=await r.json();
+    const results=[];
+    await Promise.all((files||[]).map(async f=>{
+      try{
+        const dr=await fetch(`${SB_URL}/storage/v1/object/public/timesheets/${f.name}`);
+        if(!dr.ok)return;
+        const ts=await dr.json();
+        // Check if this person submitted or is in this timesheet
+        const myName=staffName.trim().toLowerCase();
+        const hasMe=(ts.entries||[]).some(e=>e.personName&&e.personName.trim().toLowerCase()===myName);
+        if(hasMe)results.push(ts);
+      }catch{}
+    }));
+    results.sort((a,b)=>(b.submittedAt||"").localeCompare(a.submittedAt||""));
+    return results;
+  }catch(e){console.error("loadMyTimesheets:",e);return[];}
+}
+
+// ── Views ─────────────────────────────────────────────────────────────
+function renderApp(){
+  const root=document.getElementById("root");
+  root.innerHTML="";
+
+  const now=new Date();
+  const todayStr=ds(now);
+
+  // Top bar
+  const topbar=document.createElement("div");topbar.className="topbar";
+  topbar.innerHTML=`
+    <div class="topbar-logo">
+      <img src="data:image/png;base64,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" style="height:28px;width:auto;filter:brightness(0) invert(1);opacity:.9" alt="Taver Group">
+    </div>
+    <div class="topbar-user">
+      <span>${profile?.name||""}</span>
+      ${ADMIN_EMAILS.includes((profile?.email||"").toLowerCase())?`<a href="/index.html" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:4px 10px;font-size:11px;border-radius:4px;text-decoration:none;font-weight:600">Admin App</a>`:""}
+      <button class="signout-btn" id="change-pin-btn" style="margin-right:6px">🔑 PIN</button>
+      <button class="signout-btn" id="signout-btn">Sign out</button>
+    </div>`;
+  root.appendChild(topbar);
+  document.getElementById("signout-btn").onclick=signOut;
+  document.getElementById("change-pin-btn").onclick=showChangePIN;
+
+  // Nav tabs
+  const nav=document.createElement("div");nav.className="nav-tabs";
+  const tabs=[{id:"today",l:"☀️ Today"},{id:"shifts",l:"📅 My Shifts"},{id:"timesheets",l:"⏱ Timesheets"},{id:"dockets",l:"✍️ Dockets"},{id:"forms",l:"📝 Forms"}];
+  tabs.forEach(t=>{
+    const tab=document.createElement("div");
+    tab.className="nav-tab"+(currentView===t.id?" active":"");
+    tab.textContent=t.l;
+    tab.onclick=()=>{currentView=t.id;renderApp();};
+    nav.appendChild(tab);
+  });
+  root.appendChild(nav);
+
+  const main=document.createElement("div");main.className="main";
+
+  // ── Today view ───────────────────────────────────────────────────────
+  if(currentView==="today"){
+    const dayName=now.toLocaleDateString("en-AU",{weekday:"long"});
+    const dateStr=now.toLocaleDateString("en-AU",{day:"2-digit",month:"long",year:"numeric"});
+    const timeStr=now.toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit"});
+
+    const hero=document.createElement("div");hero.className="today-hero";
+    hero.innerHTML=`
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px">
+        <div>
+          <div style="font-size:11px;color:#ffb380;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px">My Daily Briefing</div>
+          <div class="today-day">${dayName}</div>
+          <div class="today-date">${dateStr}</div>
+        </div>
+        <div style="text-align:right">
+          <div class="today-time">${timeStr}</div>
+          <div style="font-size:11px;color:#ffb380;margin-top:4px">AEST</div>
+        </div>
+      </div>`;
+    main.appendChild(hero);
+
+    const todayShifts=myShifts.filter(s=>s.shift.date===todayStr);
+    const upcoming=myShifts.filter(s=>s.shift.date>todayStr).slice(0,3);
+
+    if(todayShifts.length===0){
+      const empty=document.createElement("div");
+      empty.className="card";empty.style.padding="32px 20px";empty.style.textAlign="center";
+      empty.innerHTML=`<div style="font-size:42px;margin-bottom:12px">🌅</div><div style="font-size:16px;font-weight:700;color:var(--dk);margin-bottom:6px">No shifts today</div><div style="font-size:13px;color:var(--mut)">Enjoy the day off</div>`;
+      main.appendChild(empty);
+    } else {
+      const lbl=document.createElement("div");lbl.className="section-label";lbl.textContent="On Site Today";
+      main.appendChild(lbl);
+      todayShifts.forEach(s=>main.appendChild(buildShiftCard(s,true)));
+    }
+
+    if(upcoming.length>0){
+      const lbl2=document.createElement("div");lbl2.className="section-label";lbl2.style.marginTop="16px";lbl2.textContent="Coming Up";
+      main.appendChild(lbl2);
+      upcoming.forEach(s=>main.appendChild(buildShiftCard(s,false)));
+    }
+
+    // Pending timesheets alert
+    const myPending=myTimesheets.filter(t=>t.status==="pending");
+    if(myPending.length>0){
+      const alert=document.createElement("div");
+      alert.style.cssText="background:#fff8e1;border:1px solid #f9a825;border-radius:var(--radius);padding:12px 16px;margin-top:14px;display:flex;gap:10px;align-items:center;cursor:pointer";
+      alert.innerHTML=`<span style="font-size:20px">⏱</span><div style="flex:1"><div style="font-weight:700;color:#7a5500;font-size:13px">${myPending.length} timesheet${myPending.length!==1?"s":""} pending approval</div><div style="font-size:12px;color:#7a5500">Tap to view</div></div><span style="color:#7a5500">→</span>`;
+      alert.onclick=()=>{currentView="timesheets";renderApp();};
+      main.appendChild(alert);
+    }
+  }
+
+  // ── My Shifts view ───────────────────────────────────────────────────
+  if(currentView==="shifts"){
+    const now2=new Date();const todayStr2=ds(now2);
+    const past=myShifts.filter(s=>s.shift.date<todayStr2);
+    const future=myShifts.filter(s=>s.shift.date>=todayStr2);
+
+    if(myShifts.length===0){
+      const empty=document.createElement("div");empty.className="empty";
+      empty.innerHTML=`<div class="empty-icon">📅</div>No shifts assigned yet.<br>Contact Taver Group if you think this is an error.`;
+      main.appendChild(empty);
+    } else {
+      // Stats row
+      const stats=document.createElement("div");
+      stats.style.cssText="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px";
+      [[myShifts.length,"Total Shifts"],[future.length,"Upcoming"],[past.length,"Completed"]].forEach(([n,l])=>{
+        const s=document.createElement("div");s.className="stat-box";
+        s.innerHTML=`<div class="stat-num">${n}</div><div class="stat-lbl">${l}</div>`;
+        stats.appendChild(s);
+      });
+      main.appendChild(stats);
+
+      if(future.length>0){
+        const lbl=document.createElement("div");lbl.className="section-label";lbl.textContent="Upcoming Shifts";
+        main.appendChild(lbl);
+        future.forEach(s=>main.appendChild(buildShiftCard(s,s.shift.date===todayStr2)));
+      }
+      if(past.length>0){
+        const lbl=document.createElement("div");lbl.className="section-label";lbl.style.marginTop="16px";lbl.textContent="Past Shifts";
+        main.appendChild(lbl);
+        [...past].reverse().forEach(s=>main.appendChild(buildShiftCard(s,false,true)));
+      }
+    }
+  }
+
+  // ── Timesheets view ──────────────────────────────────────────────────
+  if(currentView==="timesheets"){
+    if(myTimesheets.length===0){
+      const empty=document.createElement("div");empty.className="empty";
+      empty.innerHTML=`<div class="empty-icon">⏱</div>No timesheets yet.<br>When Taver sends you a timesheet link,<br>complete it and it will appear here.`;
+      main.appendChild(empty);
+    } else {
+      const lbl=document.createElement("div");lbl.className="section-label";lbl.textContent=`${myTimesheets.length} Timesheet${myTimesheets.length!==1?"s":""}`;
+      main.appendChild(lbl);
+      myTimesheets.forEach(ts=>{
+        const card=document.createElement("div");card.className="card";
+        const statusColor=ts.status==="approved"?"var(--green)":ts.status==="rejected"?"var(--danger)":"var(--amber)";
+        const statusBg=ts.status==="approved"?"var(--green-bg)":ts.status==="rejected"?"var(--danger-bg)":"#fff8e1";
+        const statusLabel=ts.status==="approved"?"✓ Approved":ts.status==="rejected"?"✕ Rejected":"⏱ Pending";
+        const shiftDate=ts.shiftDate?new Date(ts.shiftDate+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short",year:"numeric"}):"—";
+        const myName=(profile?.name||"").trim().toLowerCase();
+        const myEntry=(ts.entries||[]).find(e=>e.personName&&e.personName.trim().toLowerCase()===myName);
+
+        card.innerHTML=`
+          <div class="card-hdr" style="background:${statusBg}">
+            <div style="flex:1">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">
+                <span style="font-weight:700;font-size:14px;color:var(--txt)">${ts.shiftDay||""} ${shiftDate}</span>
+                <span style="background:${statusBg};color:${statusColor};border:1px solid ${statusColor}44;border-radius:4px;padding:1px 8px;font-size:11px;font-weight:700">${statusLabel}</span>
+              </div>
+              <div style="font-size:12px;color:var(--mut)">${ts.jobName||""}${ts.jobNumber?" ("+ts.jobNumber+")":""}</div>
+              ${myEntry?`<div style="font-size:12px;color:var(--mid);margin-top:4px;font-weight:600">
+                Your hours: ${myEntry.actualStart}–${myEntry.actualEnd}
+                · Net: ${myEntry.netHours?.toFixed(1)||"—"} hrs
+                ${myEntry.lunchHrs>0?" · Lunch: "+myEntry.lunchHrs+"h":""}
+                ${myEntry.travelHrs>0?" · Travel: "+myEntry.travelHrs+"h":""}
+              </div>`:""}
+            </div>
+          </div>
+          <div style="padding:10px 16px;font-size:12px;color:var(--mut)">
+            Submitted: ${ts.submittedAt?new Date(ts.submittedAt).toLocaleString("en-AU",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}):"—"}
+          </div>`;
+        main.appendChild(card);
+      });
+    }
+  }
+
+  // ── Dockets view ─────────────────────────────────────────────────────
+  if(currentView==="dockets"){
+    const hdr=document.createElement("div");
+    hdr.style.cssText="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px";
+    hdr.innerHTML=`<div style="font-weight:700;font-size:18px;color:var(--dk)">My Dockets</div>`;
+    const newDocketBtn=document.createElement("button");
+    newDocketBtn.className="btn-s";newDocketBtn.style.fontSize="13px";
+    newDocketBtn.textContent="+ New Docket";
+    newDocketBtn.onclick=()=>showCreateDocket();
+    hdr.appendChild(newDocketBtn);
+    main.appendChild(hdr);
+
+    const docketList=document.createElement("div");
+    const loadingMsg=document.createElement("div");
+    loadingMsg.style.cssText="text-align:center;padding:20px;color:var(--mut);font-size:13px";
+    loadingMsg.textContent="Loading dockets...";
+    docketList.appendChild(loadingMsg);
+    main.appendChild(docketList);
+
+    loadMyDockets(profile.name).then(dockets=>{
+      docketList.innerHTML="";
+      if(dockets.length===0){
+        docketList.innerHTML=`<div class="empty"><div class="empty-icon">✍️</div>No dockets yet.<br>Tap "+ New Docket" to create one.</div>`;
+      } else {
+        dockets.forEach(d=>{
+          const card=document.createElement("div");card.className="card";
+          const shiftDate=d.shiftDate?new Date(d.shiftDate+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short",year:"numeric"}):"—";
+          const totalH=(d.crewHours||[]).reduce((a,c)=>a+(c.hoursNet||c.hours||0),0);
+          card.innerHTML=`
+            <div class="card-hdr">
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px">
+                  <span style="font-weight:700;font-size:14px">${d.shiftDay||""} ${shiftDate}</span>
+                  ${d.docketNumber?`<span style="background:var(--acc-light);color:var(--mid);border:1px solid var(--bdr2);border-radius:4px;padding:1px 7px;font-size:11px;font-weight:700">${d.docketNumber}</span>`:""}
+                </div>
+                <div style="font-size:12px;color:var(--mut)">${d.jobName||""}${d.jobNumber?" ("+d.jobNumber+")":""}</div>
+                <div style="font-size:12px;color:var(--mid);margin-top:3px;font-weight:600">${totalH.toFixed(1)} hrs · ${d.clientSigData?"✓ Client signed":"Unsigned"}</div>
+              </div>
+            </div>
+            <div style="padding:8px 16px;font-size:12px;color:var(--mut)">Submitted: ${d.createdAt?new Date(d.createdAt).toLocaleString("en-AU",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}):"—"}</div>`;
+          docketList.appendChild(card);
+        });
+      }
+    });
+  }
+
+  // ── Create Timesheet button on timesheets view ────────────────────────
+  if(currentView==="timesheets"){
+    const createBtn=document.createElement("button");
+    createBtn.className="btn-s";createBtn.style.cssText="width:100%;margin-top:12px;font-size:13px";
+    createBtn.textContent="+ Create Timesheet Manually";
+    createBtn.onclick=()=>showCreateTimesheet();
+    main.appendChild(createBtn);
+  }
+
+  // ── Forms view ────────────────────────────────────────────────────────
+  if(currentView==="forms"){
+    const hdr=document.createElement("div");
+    hdr.style.cssText="margin-bottom:16px";
+    hdr.innerHTML=`<div style="font-weight:700;font-size:18px;color:var(--dk);margin-bottom:4px">Forms</div>
+      <div style="font-size:13px;color:var(--mut)">Complete and submit shift reports and inspections</div>`;
+    main.appendChild(hdr);
+
+    // Form cards
+    const forms=[
+      {
+        id:"equipment-report",
+        icon:"🔧",
+        title:"Equipment & Asset Report",
+        desc:"Post-shift report on welding equipment condition, damage, missing items and consumables",
+        color:"#1a5276",
+        bg:"#eaf4fb",
+        action:()=>showEquipmentReportForm()
+      },
+      {
+        id:"swms-signoff",
+        icon:"📋",
+        title:"SWMS Sign-Off — Welding & Rerailing",
+        desc:"TG-017 — Confirm you have read, understood and will comply with the Safe Work Method Statement",
+        color:"#141920",
+        bg:"#fff3ee",
+        action:()=>showSWMSSignOffForm()
+      }
+    ];
+
+    forms.forEach(form=>{
+      const card=document.createElement("div");
+      card.style.cssText=`background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius-lg);padding:16px;margin-bottom:12px;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;transition:all .15s`;
+      card.addEventListener("mouseenter",()=>card.style.transform="translateY(-1px)");
+      card.addEventListener("mouseleave",()=>card.style.transform="");
+      card.innerHTML=`
+        <div style="width:48px;height:48px;border-radius:10px;background:${form.bg};display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0">${form.icon}</div>
+        <div style="flex:1">
+          <div style="font-weight:700;font-size:15px;color:var(--txt);margin-bottom:3px">${form.title}</div>
+          <div style="font-size:12px;color:var(--mut);line-height:1.5">${form.desc}</div>
+        </div>
+        <div style="color:var(--mut);font-size:18px">›</div>`;
+      card.onclick=()=>form.action();
+      main.appendChild(card);
+    });
+  }
+
+  root.appendChild(main);
+  const pby=document.createElement("div");pby.style.cssText="text-align:center;padding:16px 0 20px;font-size:10px;color:var(--mut);letter-spacing:.4px";pby.innerHTML='Powered by <strong style="color:#ff5500;font-family:Orbitron,sans-serif;font-size:9px;letter-spacing:1px">SITERUNNER</strong> <strong style="letter-spacing:2px">LIVE</strong>';root.appendChild(pby);
+}
+
+// ── Shift Confirmations ───────────────────────────────────────────────
+
+let confirmationCache={}; // shiftId -> {status, updatedAt}
+
+async function loadConfirmations(){
+  try{
+    const name=encodeURIComponent(profile.name);
+    const r=await fetch(`${SB_URL}/rest/v1/shift_confirmations?staff_name=ilike.${name}&select=*`,{
+      headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY}
+    });
+    if(!r.ok){console.warn("Confirmations not available yet:",r.status);return;}
+    const rows=await r.json();
+    confirmationCache={};
+    (rows||[]).forEach(row=>{confirmationCache[row.shift_id]=row;});
+    console.log("Loaded",Object.keys(confirmationCache).length,"confirmations");
+  }catch(e){console.warn("loadConfirmations failed (table may not exist yet):",e);}
+}
+
+async function setConfirmation(shift, job, status){
+  const existing=confirmationCache[shift.id];
+  const id=existing?.id||(Date.now().toString(36)+Math.random().toString(36).slice(2,6));
+  const row={id,shift_id:shift.id,job_id:job.id,staff_name:profile.name,status,updated_at:new Date().toISOString()};
+  try{
+    const r=await fetch(`${SB_URL}/rest/v1/shift_confirmations`,{
+      method:"POST",
+      headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","Prefer":"resolution=merge-duplicates"},
+      body:JSON.stringify(row)
+    });
+    if(!r.ok)throw new Error(await r.text());
+    confirmationCache[shift.id]=row;
+    // Status saved to Supabase — admin sees it in real time
+  }catch(e){console.error("setConfirmation error:",e);alert("Failed to save — try again");}
+}
+
+// Email notifications removed — status tracked via Supabase
+
+function buildShiftCard(s, isToday, isPast){
+  const {job,shift,myEntry,crew}=s;
+  const shiftDate=new Date(shift.date+"T12:00:00");
+  const namedCrew=crew.filter(p=>p.name&&p.name.trim());
+  const confirmation=confirmationCache[shift.id];
+  const confStatus=confirmation?.status||"pending";
+
+  const card=document.createElement("div");card.className="card";
+
+  // Colour bar
+  const bar=document.createElement("div");
+  bar.style.cssText=`height:4px;background:${job.color};width:100%`;
+  if(isPast)bar.style.opacity="0.4";
+  card.appendChild(bar);
+
+  const body=document.createElement("div");body.className="card-body";
+
+  // Date + time header
+  const dRow=document.createElement("div");
+  dRow.style.cssText="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px";
+  const dLeft=document.createElement("div");
+  dLeft.innerHTML=`
+    <div style="font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px">${isToday?"TODAY — On Site Now":fmtFull(shiftDate)}</div>
+    <div style="font-size:18px;font-weight:800;color:${isPast?"var(--mut)":"var(--mid)"}">${myEntry.shiftStart} – ${myEntry.shiftEnd}</div>
+    <div style="font-size:11px;color:var(--mut);margin-top:2px">My times · Shift: ${shift.startTime}–${shift.endTime}</div>`;
+  const dRight=document.createElement("div");dRight.style.textAlign="right";
+  if(job.jobNumber){
+    const jn=document.createElement("div");
+    jn.style.cssText="background:var(--mid);color:#fff;border-radius:6px;padding:4px 10px;font-size:13px;font-weight:800;letter-spacing:.5px";
+    jn.textContent=job.jobNumber;dRight.appendChild(jn);
+  }
+  dRow.appendChild(dLeft);dRow.appendChild(dRight);
+  body.appendChild(dRow);
+
+  // Job + site
+  const jRow=document.createElement("div");jRow.style.cssText="margin-bottom:8px";
+  jRow.innerHTML=`<div style="font-weight:700;font-size:15px;color:var(--dk);margin-bottom:3px">${job.name}${job.po?" — "+job.po:""}</div>`;
+  if(job.client){const c=document.createElement("div");c.style.cssText="font-size:12px;color:var(--mut)";c.textContent="Client: "+job.client;jRow.appendChild(c);}
+  if(job.siteAddress){
+    const sRow=document.createElement("div");sRow.style.cssText="font-size:12px;color:var(--mut);display:flex;align-items:center;gap:6px;margin-top:2px";
+    sRow.innerHTML=`📍 ${job.siteAddress}`;
+    if(job.mapLink){
+      const ml=document.createElement("a");ml.href=job.mapLink;ml.target="_blank";
+      ml.style.cssText="color:var(--mid);font-weight:700;text-decoration:none;font-size:11px;background:var(--acc-light);border:1px solid var(--bdr2);border-radius:4px;padding:1px 6px";
+      ml.textContent="Map →";sRow.appendChild(ml);
+    }
+    jRow.appendChild(sRow);
+  }
+  if(job.clientContact){
+    const cRow=document.createElement("div");cRow.style.cssText="font-size:12px;color:var(--mut);margin-top:2px";
+    cRow.textContent=`Site contact: ${job.clientContact}${job.clientPhone?" — "+job.clientPhone:""}`;
+    jRow.appendChild(cRow);
+  }
+  body.appendChild(jRow);
+
+  // Role badge
+  const rBadge=document.createElement("div");
+  rBadge.style.cssText="margin-bottom:10px";
+  rBadge.innerHTML=`<span style="background:var(--acc-light);color:var(--mid);border:1px solid var(--bdr2);border-radius:4px;padding:3px 10px;font-size:12px;font-weight:700">My role: ${myEntry.role}</span>`;
+  body.appendChild(rBadge);
+
+  // Crew list
+  if(namedCrew.length>1){
+    const cRow=document.createElement("div");cRow.style.cssText="margin-bottom:4px";
+    const cLbl=document.createElement("div");cLbl.style.cssText="font-size:11px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px";cLbl.textContent="Crew on this shift";
+    cRow.appendChild(cLbl);
+    const chips=document.createElement("div");chips.style.cssText="display:flex;flex-wrap:wrap;gap:4px";
+    const myName=(profile?.name||"").trim().toLowerCase();
+    namedCrew.forEach(p=>{
+      const isMe=p.name.trim().toLowerCase()===myName;
+      const chip=document.createElement("span");
+      chip.className="crew-chip"+(isMe?" me":"");
+      chip.textContent=(isMe?"👤 ":"")+p.name+(p.role?" ("+p.role+")":"");
+      chips.appendChild(chip);
+    });
+    cRow.appendChild(chips);
+    body.appendChild(cRow);
+  }
+
+  card.appendChild(body); // ← attach all the shift details to the card
+
+  // ── Confirm / Decline buttons ─────────────────────────────────────
+  const todayStr=ds(new Date());
+  const showConfirmation=shift.date>=todayStr; // show on today and future
+  if(showConfirmation){
+    const confWrap=document.createElement("div");
+    confWrap.style.cssText="padding:10px 14px;border-top:1px solid var(--bdr);background:var(--bg3);display:flex;align-items:center;gap:8px;flex-wrap:wrap";
+
+    if(confStatus==="pending"){
+      // Shift details summary
+      const shiftSummary=document.createElement("div");
+      shiftSummary.style.cssText="width:100%;margin-bottom:10px;padding:8px 10px;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius)";
+      const shiftDateFmt=new Date(shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});
+      shiftSummary.innerHTML=`
+        <div style="font-size:12px;font-weight:700;color:var(--txt);margin-bottom:4px">Can you make this shift?</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.7">
+          <span style="display:block">📋 <strong>${job.name}</strong>${job.jobNumber?" — "+job.jobNumber:""}</span>
+          <span style="display:block">📅 ${shiftDateFmt}</span>
+          <span style="display:block">🕐 ${myEntry.shiftStart} – ${myEntry.shiftEnd}</span>
+          ${job.siteAddress?`<span style="display:block">📍 ${job.siteAddress}</span>`:""}
+          <span style="display:block">👤 My role: ${myEntry.role}</span>
+        </div>`;
+      confWrap.appendChild(shiftSummary);
+      const btnRow=document.createElement("div");
+      btnRow.style.cssText="display:flex;gap:8px;width:100%";
+      const confirmBtn=document.createElement("button");
+      confirmBtn.style.cssText="flex:1;background:#fff3ee;color:#1a6b2e;border:1px solid #a9d5b0;border-radius:6px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit";
+      confirmBtn.textContent="✓ Yes, I can make it";
+      confirmBtn.onclick=async()=>{
+        confirmBtn.disabled=true;declineBtn.disabled=true;
+        confirmBtn.textContent="Saving...";
+        await setConfirmation(shift,job,"confirmed");
+        renderApp();
+      };
+      const declineBtn=document.createElement("button");
+      declineBtn.style.cssText="flex:1;background:#fdf0f0;color:#c0392b;border:1px solid #f5c6c2;border-radius:6px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit";
+      declineBtn.textContent="✗ No, I can't make it";
+      declineBtn.onclick=async()=>{
+        confirmBtn.disabled=true;declineBtn.disabled=true;
+        declineBtn.textContent="Saving...";
+        await setConfirmation(shift,job,"declined");
+        renderApp();
+      };
+      btnRow.appendChild(confirmBtn);
+      btnRow.appendChild(declineBtn);
+      confWrap.appendChild(btnRow);
+    } else if(confStatus==="confirmed"){
+      confWrap.innerHTML=`
+        <span style="font-size:16px">✅</span>
+        <span style="font-size:13px;font-weight:700;color:#1a6b2e;flex:1">You confirmed this shift</span>
+        <button onclick="this.disabled=true" style="background:none;border:none;color:var(--mut);font-size:11px;cursor:pointer;font-family:inherit;padding:4px 8px;border-radius:4px;border:1px solid var(--bdr)" id="change-${shift.id}">Change response</button>`;
+      confWrap.querySelector(`#change-${shift.id}`).onclick=async()=>{
+        await setConfirmation(shift,job,"pending");
+        delete confirmationCache[shift.id];
+        renderApp();
+      };
+    } else if(confStatus==="declined"){
+      confWrap.innerHTML=`
+        <span style="font-size:16px">❌</span>
+        <span style="font-size:13px;font-weight:700;color:#c0392b;flex:1">You declined this shift</span>
+        <button style="background:none;border:none;color:var(--mut);font-size:11px;cursor:pointer;font-family:inherit;padding:4px 8px;border-radius:4px;border:1px solid var(--bdr)" id="change2-${shift.id}">Change response</button>`;
+      confWrap.querySelector(`#change2-${shift.id}`).onclick=async()=>{
+        await setConfirmation(shift,job,"pending");
+        delete confirmationCache[shift.id];
+        renderApp();
+      };
+    }
+    card.appendChild(confWrap);
+  }
+
+  // ── Quick action buttons — always visible ────────────────────────
+  const actionBar=document.createElement("div");
+  actionBar.style.cssText="padding:8px 14px;border-top:1px solid var(--bdr);display:flex;gap:8px;background:var(--bg2)";
+
+  const tsBtn=document.createElement("button");
+  tsBtn.style.cssText="flex:1;background:var(--bg3);border:1px solid var(--bdr);color:var(--txt);border-radius:var(--radius);padding:8px 10px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px";
+  tsBtn.innerHTML="⏱ Timesheet";
+  tsBtn.onclick=()=>showCreateTimesheet(s);
+  actionBar.appendChild(tsBtn);
+
+  const dktBtn=document.createElement("button");
+  dktBtn.style.cssText="flex:1;background:var(--bg3);border:1px solid var(--bdr);color:var(--txt);border-radius:var(--radius);padding:8px 10px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:5px";
+  dktBtn.innerHTML="✍️ Docket";
+  dktBtn.onclick=()=>showCreateDocket(s);
+  actionBar.appendChild(dktBtn);
+
+  card.appendChild(actionBar);
+
+  return card;
+}
+function signOut(){
+  localStorage.removeItem("taver_pin_session");
+  localStorage.removeItem("taver_staff_session");
+  session=null;profile=null;myShifts=[];myTimesheets=[];
+  showLoginScreen();
+}
+
+function showLoginScreen(msg){
+  const root=document.getElementById("root");root.innerHTML="";
+  const wrap=document.createElement("div");wrap.className="auth-wrap";
+  wrap.innerHTML=`
+    <div class="auth-brand">
+      <div style="font-family:'Orbitron',sans-serif;font-size:40px;font-weight:800;letter-spacing:3px;color:#fff;line-height:1;margin-bottom:10px">SITERUNNER</div>
+      <div style="display:inline-flex;align-items:center;gap:0">
+        <div style="height:2px;width:40px;background:#ff5500;border-radius:2px"></div>
+        <div style="font-size:14px;font-weight:900;letter-spacing:6px;color:#ff5500;padding:3px 16px;border:2px solid #ff5500;border-radius:4px;margin:0 8px">LIVE</div>
+        <div style="height:2px;width:40px;background:#ff5500;border-radius:2px"></div>
+      </div>
+      <div style="font-size:11px;color:rgba(255,255,255,.3);margin-top:8px;letter-spacing:2px;text-transform:uppercase">Staff Portal</div>
+    </div>
+    <div class="auth-card">
+      <div class="auth-logo">
+        <img src="data:image/png;base64,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" style="height:36px;width:auto;display:block;margin:0 auto;filter:brightness(0) invert(1);opacity:.7" alt="Taver Group">
+      </div>
+      <div class="auth-title">Sign in to your account</div>
+      <input type="text" id="name-input" placeholder="Your full name" autocomplete="name" autocorrect="off" style="margin-bottom:10px">
+      <input type="tel" id="pin-input" placeholder="PIN" maxlength="6" inputmode="numeric" pattern="[0-9]*"
+        style="letter-spacing:8px;font-size:24px;font-weight:800;text-align:center">
+      <button class="auth-btn" id="login-btn">Sign In</button>
+      <div class="auth-msg ${msg?.type||""}" id="auth-msg">${msg?.text||""}</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.3);text-align:center;margin-top:14px">Your name and PIN are provided by your employer</div>
+    </div>`;
+  root.appendChild(wrap);
+  const pw=document.createElement('div');pw.className='auth-powered';pw.innerHTML='Powered by <strong style="color:#ff5500">SiteRunner</strong> LIVE';wrap.appendChild(pw);
+
+  const nameInput=document.getElementById("name-input");
+  const pinInput=document.getElementById("pin-input");
+  const loginBtn=document.getElementById("login-btn");
+  const msgEl=document.getElementById("auth-msg");
+
+  // Only allow numeric input for PIN
+  pinInput.addEventListener("input",()=>{pinInput.value=pinInput.value.replace(/[^0-9]/g,"");});
+
+  async function attemptLogin(){
+    const name=nameInput.value.trim();
+    const pin=pinInput.value.trim();
+    if(!name){nameInput.focus();msgEl.className="auth-msg error";msgEl.textContent="Please enter your full name";return;}
+    if(!pin||pin.length<4){pinInput.focus();msgEl.className="auth-msg error";msgEl.textContent="Please enter your PIN";return;}
+    loginBtn.disabled=true;loginBtn.textContent="Signing in...";msgEl.textContent="";
+    try{
+      // Look up staff by name and PIN from Supabase
+      // Use case-insensitive name match
+      const encodedName=encodeURIComponent(name);
+      const r=await fetch(`${SB_URL}/rest/v1/staff?name=ilike.${encodedName}&select=id,name,role,pin`,{
+        headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY}
+      });
+      if(!r.ok){
+        const errText=await r.text();
+        console.error("Staff lookup failed:",r.status,errText);
+        msgEl.className="auth-msg error";msgEl.textContent="Connection error — please try again";
+        loginBtn.disabled=false;loginBtn.textContent="Sign In";
+        return;
+      }
+      const staff=await r.json();
+      console.log("Staff found:",staff?.length,"matches");
+      // Find one where PIN matches
+      const DEFAULT_PIN = "1234"; // fallback if no personal PIN set
+      const match=staff.find(s=>{
+        const staffPin=(s.pin||"").trim()||DEFAULT_PIN;
+        return staffPin===pin.trim();
+      });
+      if(!match){
+        msgEl.className="auth-msg error";
+        msgEl.textContent="Name or PIN not recognised — check with Taver Group";
+        loginBtn.disabled=false;loginBtn.textContent="Sign In";
+        pinInput.value="";pinInput.focus();
+        return;
+      }
+      const staffMember=match;
+      // Store PIN session
+      const pinSession={
+        staffId:staffMember.id,
+        name:staffMember.name,
+        role:staffMember.role||"",
+        exp:Date.now()+30*24*60*60*1000, // kept for backwards compat
+        permanent:true // no expiry enforced
+      };
+      localStorage.setItem("taver_pin_session",JSON.stringify(pinSession));
+      profile={name:staffMember.name,role:staffMember.role||""};
+      // Load data and render
+      showLoadingScreen();
+      [myShifts,myTimesheets]=await Promise.all([
+        loadMyData(SB_KEY,staffMember.name),
+        loadMyTimesheets(SB_KEY,staffMember.name)
+      ]);
+      await loadConfirmations();
+      renderApp();
+    }catch(e){
+      console.error(e);
+      msgEl.className="auth-msg error";msgEl.textContent="Connection error — try again";
+      loginBtn.disabled=false;loginBtn.textContent="Sign In";
+    }
+  }
+
+  loginBtn.onclick=attemptLogin;
+  pinInput.onkeydown=e=>{if(e.key==="Enter")attemptLogin();};
+  nameInput.onkeydown=e=>{if(e.key==="Enter")pinInput.focus();};
+  nameInput.focus();
+}
+
+function showLoadingScreen(){
+  document.getElementById("root").innerHTML=`
+    <div class="loading">
+      <div style="width:60px;height:60px;background:var(--dk);border-radius:10px;display:flex;align-items:center;justify-content:center">
+        <svg width="36" height="36" viewBox="0 0 36 36"><rect width="36" height="36" rx="5" fill="#0a1410"/><text x="18" y="26" text-anchor="middle" fill="#ff8040" font-size="22" font-weight="800" font-family="Arial">T</text></svg>
+      </div>
+      <div style="font-weight:700;color:var(--dk);font-size:15px">Loading your shifts...</div>
+      <div class="loading-dots"><div class="loading-dot"></div><div class="loading-dot"></div><div class="loading-dot"></div></div>
+    </div>`;
+}
+
+// ── Load my dockets ───────────────────────────────────────────────────
+async function loadMyDockets(staffName){
+  try{
+    const r=await fetch(`${SB_URL}/storage/v1/object/list/dockets`,{
+      method:"POST",headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json"},
+      body:JSON.stringify({limit:1000,offset:0,prefix:""})
+    });
+    if(!r.ok)return[];
+    const files=await r.json();
+    const results=[];
+    const myName=staffName.trim().toLowerCase();
+    await Promise.all((files||[]).map(async f=>{
+      try{
+        const dr=await fetch(`${SB_URL}/storage/v1/object/public/dockets/${f.name}`);
+        if(!dr.ok)return;
+        const d=await dr.json();
+        // Show if submitted by this person (superintendent) or they are in crew
+        const isTheirJob=myShifts.some(s=>s.job.id===d.jobId);
+        if(isTheirJob)results.push(d);
+      }catch{}
+    }));
+    results.sort((a,b)=>(b.createdAt||"").localeCompare(a.createdAt||""));
+    return results;
+  }catch{return[];}
+}
+
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+
+// ── Show modal helper ─────────────────────────────────────────────────
+function showModal(title, buildFn){
+  const overlay=document.createElement("div");
+  overlay.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:flex;align-items:flex-end;justify-content:center;padding:0";
+  const sheet=document.createElement("div");
+  sheet.style.cssText="background:var(--bg);border-radius:16px 16px 0 0;width:100%;max-width:600px;max-height:92vh;overflow-y:auto;padding:20px 18px 40px";
+  const hdr=document.createElement("div");
+  hdr.style.cssText="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px";
+  hdr.innerHTML=`<span style="font-size:17px;font-weight:700;color:var(--dk)">${title}</span>`;
+  const closeBtn=document.createElement("button");
+  closeBtn.textContent="✕";closeBtn.style.cssText="background:var(--bg3);border:1px solid var(--bdr);color:var(--mut);padding:6px 10px;border-radius:6px;cursor:pointer;font-size:14px";
+  closeBtn.onclick=()=>overlay.remove();
+  hdr.appendChild(closeBtn);
+  sheet.appendChild(hdr);
+  buildFn(sheet,()=>overlay.remove());
+  overlay.appendChild(sheet);
+  overlay.onclick=e=>{if(e.target===overlay)overlay.remove();};
+  document.body.appendChild(overlay);
+}
+
+function mkField(label,input){
+  const wrap=document.createElement("div");wrap.style.marginBottom="12px";
+  const lbl=document.createElement("label");lbl.textContent=label;
+  lbl.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+  wrap.appendChild(lbl);wrap.appendChild(input);return wrap;
+}
+
+function mkInput(type,placeholder,value=""){
+  const i=document.createElement("input");i.type=type;i.placeholder=placeholder;i.value=value;
+  i.style.cssText="width:100%;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;font-size:14px;font-family:inherit;outline:none";
+  return i;
+}
+
+function mkSelect(options){
+  const s=document.createElement("select");
+  s.style.cssText="width:100%;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;font-size:14px;font-family:inherit;outline:none";
+  options.forEach(([v,l])=>{const o=document.createElement("option");o.value=v;o.textContent=l;s.appendChild(o);});
+  return s;
+}
+
+function mkSigPad(canvas){
+  const ctx=canvas.getContext("2d");
+  ctx.fillStyle="#ffffff";ctx.fillRect(0,0,canvas.width,canvas.height);
+  let drawing=false,lx=0,ly=0;
+  function pos(e){const r=canvas.getBoundingClientRect();const sx=canvas.width/r.width,sy=canvas.height/r.height;if(e.touches)return{x:(e.touches[0].clientX-r.left)*sx,y:(e.touches[0].clientY-r.top)*sy};return{x:(e.clientX-r.left)*sx,y:(e.clientY-r.top)*sy};}
+  canvas.addEventListener("mousedown",e=>{drawing=true;const p=pos(e);lx=p.x;ly=p.y;});
+  canvas.addEventListener("mousemove",e=>{if(!drawing)return;const p=pos(e);ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(p.x,p.y);ctx.strokeStyle="#111";ctx.lineWidth=2.5;ctx.lineCap="round";ctx.stroke();lx=p.x;ly=p.y;});
+  canvas.addEventListener("mouseup",()=>drawing=false);canvas.addEventListener("mouseleave",()=>drawing=false);
+  canvas.addEventListener("touchstart",e=>{e.preventDefault();drawing=true;const p=pos(e);lx=p.x;ly=p.y;},{passive:false});
+  canvas.addEventListener("touchmove",e=>{e.preventDefault();if(!drawing)return;const p=pos(e);ctx.beginPath();ctx.moveTo(lx,ly);ctx.lineTo(p.x,p.y);ctx.strokeStyle="#111";ctx.lineWidth=2.5;ctx.lineCap="round";ctx.stroke();lx=p.x;ly=p.y;},{passive:false});
+  canvas.addEventListener("touchend",()=>drawing=false);
+  return{clear:()=>{ctx.fillStyle="#fff";ctx.fillRect(0,0,canvas.width,canvas.height);},isEmpty:()=>!ctx.getImageData(0,0,canvas.width,canvas.height).data.some((v,i)=>i%4!==3&&v!==255),toDataURL:()=>canvas.toDataURL("image/png")};
+}
+
+// ── Create Timesheet ──────────────────────────────────────────────────
+function showCreateTimesheet(preSelected){
+  showModal("New Timesheet",(sheet,close)=>{
+
+    // If pre-selected from shift card, show read-only header
+    if(preSelected){
+      const {job,shift,myEntry}=preSelected;
+      const d=new Date(shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});
+      const hdr=document.createElement("div");
+      hdr.style.cssText="background:var(--acc-light);border:1px solid var(--bdr2);border-radius:var(--radius);padding:10px 14px;margin-bottom:14px";
+      hdr.innerHTML=`
+        <div style="font-weight:700;font-size:13px;color:var(--mid);margin-bottom:4px">${job.jobNumber?" "+job.jobNumber:""} ${job.name}</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.7">
+          <span style="display:block">📅 ${d}</span>
+          <span style="display:block">🕐 Shift: ${shift.startTime} – ${shift.endTime}</span>
+          <span style="display:block">👤 Role: ${myEntry.role}</span>
+          ${job.siteAddress?`<span style="display:block">📍 ${job.siteAddress}</span>`:""}
+        </div>`;
+      sheet.appendChild(hdr);
+    }
+
+    // Job + shift selectors (hidden if pre-selected)
+    const uniqueJobs=[...new Map(myShifts.map(s=>[s.job.id,s.job])).values()];
+    const jobSel=mkSelect([["","— Select job —"],...uniqueJobs.map(j=>[j.id,`${j.jobNumber||""} ${j.name}`.trim()])]);
+    const shiftSel=mkSelect([["","— Select shift —"]]);
+
+    if(preSelected){
+      jobSel.value=preSelected.job.id;
+      // Pre-populate shift selector
+      myShifts.filter(s=>s.job.id===preSelected.job.id).forEach(s=>{
+        const o=document.createElement("option");o.value=s.shift.id;
+        const d=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+        o.textContent=`${d} ${s.shift.startTime}–${s.shift.endTime}`;
+        if(s.shift.id===preSelected.shift.id)o.selected=true;
+        shiftSel.appendChild(o);
+      });
+    } else {
+      sheet.appendChild(mkField("Job",jobSel));
+      sheet.appendChild(mkField("Shift date",shiftSel));
+      jobSel.addEventListener("change",()=>{
+        shiftSel.innerHTML="";
+        const opt=document.createElement("option");opt.value="";opt.textContent="— Select shift —";shiftSel.appendChild(opt);
+        myShifts.filter(s=>s.job.id===jobSel.value).forEach(s=>{
+          const o=document.createElement("option");o.value=s.shift.id;
+          const d=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+          o.textContent=`${d} ${s.shift.startTime}–${s.shift.endTime}`;
+          shiftSel.appendChild(o);
+        });
+      });
+    }
+
+    // Actual times — pre-fill from shift if pre-selected
+    const timeRow=document.createElement("div");timeRow.style.cssText="display:grid;grid-template-columns:1fr 1fr;gap:10px";
+    const startIn=mkInput("time","Start",preSelected?preSelected.myEntry.shiftStart||preSelected.shift.startTime:"06:00");
+    const endIn=mkInput("time","End",preSelected?preSelected.myEntry.shiftEnd||preSelected.shift.endTime:"14:00");
+    timeRow.appendChild(mkField("Actual start",startIn));
+    timeRow.appendChild(mkField("Actual finish",endIn));
+    sheet.appendChild(timeRow);
+
+    // Lunch
+    const lunchSel=mkSelect([["0","No lunch break"],["0.5","30 min"],["1","1 hour"],["1.5","1.5 hours"],["2","2 hours"]]);
+    sheet.appendChild(mkField("Lunch break",lunchSel));
+
+    // Travel + LAFHA
+    const travelIn=mkInput("number","0");travelIn.min="0";travelIn.step="0.5";
+    sheet.appendChild(mkField("Travel hours (if applicable)",travelIn));
+    const lafhaSel=mkSelect([["no","No"],["yes","Yes"]]);
+    sheet.appendChild(mkField("LAFHA",lafhaSel));
+
+    // Notes
+    const notesIn=document.createElement("textarea");
+    notesIn.placeholder="Any variations or additional notes...";
+    notesIn.style.cssText="width:100%;min-height:60px;font-size:14px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(mkField("Notes",notesIn));
+
+    // Signature
+    const sigLbl=document.createElement("label");sigLbl.textContent="Your signature";sigLbl.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+    sheet.appendChild(sigLbl);
+    const sigWrap=document.createElement("div");sigWrap.style.cssText="border:1px solid var(--bdr);border-radius:var(--radius);background:#fff;position:relative;margin-bottom:14px";
+    const canvas=document.createElement("canvas");canvas.width=600;canvas.height=120;canvas.style.cssText="display:block;width:100%;height:120px;cursor:crosshair;touch-action:none;border-radius:var(--radius)";
+    const clearBtn=document.createElement("button");clearBtn.textContent="Clear";clearBtn.style.cssText="position:absolute;top:6px;right:8px;background:rgba(255,255,255,.9);border:1px solid var(--bdr);border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:inherit;color:var(--mut)";
+    sigWrap.appendChild(canvas);sigWrap.appendChild(clearBtn);
+    sheet.appendChild(sigWrap);
+    const sig=mkSigPad(canvas);clearBtn.onclick=()=>sig.clear();
+
+    // Submit
+    const submitBtn=document.createElement("button");submitBtn.className="btn-p";submitBtn.textContent="Submit Timesheet";
+    submitBtn.onclick=async()=>{
+      if(!jobSel.value||!shiftSel.value){alert("Please select a job and shift");return;}
+      if(sig.isEmpty()){alert("Please sign before submitting");return;}
+      submitBtn.disabled=true;submitBtn.textContent="Submitting...";
+
+      const selectedShift=myShifts.find(s=>s.shift.id===shiftSel.value);
+      const lunch=parseFloat(lunchSel.value)||0;
+      const grossH=(new Date("2000-01-01T"+endIn.value)-new Date("2000-01-01T"+startIn.value))/3600000;
+      const netH=Math.max(0,grossH-lunch);
+
+      const ts={
+        id:uid(),
+        jobId:selectedShift.job.id,shiftId:selectedShift.shift.id,
+        jobName:selectedShift.job.name,jobNumber:selectedShift.job.jobNumber||"",
+        jobPO:selectedShift.job.po||"",client:selectedShift.job.client||"",
+        siteAddress:selectedShift.job.siteAddress||"",
+        shiftDate:selectedShift.shift.date,shiftDay:selectedShift.shift.dayLabel,
+        shiftStart:selectedShift.shift.startTime,shiftEnd:selectedShift.shift.endTime,
+        submittedAt:new Date().toISOString(),
+        status:"pending",
+        entries:[{
+          personId:"staff-manual",personName:profile.name,role:profile.role||"",
+          actualStart:startIn.value,actualEnd:endIn.value,
+          lunchHrs:lunch,netHours:netH,
+          travelHrs:parseFloat(travelIn.value)||0,
+          lafha:lafhaSel.value==="yes",
+          notes:notesIn.value.trim(),
+          signature:sig.toDataURL(),status:"pending"
+        }]
+      };
+
+      try{
+        const blob=new Blob([JSON.stringify(ts)],{type:"application/json"});
+        const r=await fetch(`${SB_URL}/storage/v1/object/timesheets/${ts.id}.json`,{
+          method:"POST",headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","x-upsert":"true"},body:blob
+        });
+        if(!r.ok)throw new Error(await r.text());
+        myTimesheets.unshift(ts);
+        close();renderApp();
+        alert("Timesheet submitted successfully ✓");
+      }catch(e){
+        submitBtn.disabled=false;submitBtn.textContent="Submit Timesheet";
+        alert("Failed to submit — check connection and try again.\n"+e.message);
+      }
+    };
+    sheet.appendChild(submitBtn);
+  });
+}
+
+// ── Create Docket ─────────────────────────────────────────────────────
+function showCreateDocket(preSelected){
+  showModal("New Docket",(sheet,close)=>{
+    const uniqueJobs=[...new Map(myShifts.map(s=>[s.job.id,s.job])).values()];
+    const jobSel=mkSelect([["","— Select job —"],...uniqueJobs.map(j=>[j.id,`${j.jobNumber||""} ${j.name}`.trim()])]);
+    const shiftSel=mkSelect([["","— Select shift —"]]);
+
+    if(preSelected){
+      const {job,shift,myEntry}=preSelected;
+      const d=new Date(shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});
+      const hdr=document.createElement("div");
+      hdr.style.cssText="background:var(--acc-light);border:1px solid var(--bdr2);border-radius:var(--radius);padding:10px 14px;margin-bottom:14px";
+      hdr.innerHTML=`
+        <div style="font-weight:700;font-size:13px;color:var(--mid);margin-bottom:4px">${job.jobNumber?" "+job.jobNumber:""} ${job.name}</div>
+        <div style="font-size:12px;color:var(--mut);line-height:1.7">
+          <span style="display:block">📅 ${d}</span>
+          <span style="display:block">🕐 Shift: ${shift.startTime} – ${shift.endTime}</span>
+          <span style="display:block">👤 Role: ${myEntry.role}</span>
+          ${job.siteAddress?`<span style="display:block">📍 ${job.siteAddress}</span>`:""}
+          ${job.client?`<span style="display:block">Client: ${job.client}</span>`:""}
+        </div>`;
+      sheet.appendChild(hdr);
+      jobSel.value=job.id;
+      myShifts.filter(s=>s.job.id===job.id).forEach(s=>{
+        const o=document.createElement("option");o.value=s.shift.id;
+        const dd=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+        o.textContent=`${dd} ${s.shift.startTime}–${s.shift.endTime}`;
+        if(s.shift.id===shift.id)o.selected=true;
+        shiftSel.appendChild(o);
+      });
+    } else {
+      sheet.appendChild(mkField("Job",jobSel));
+      sheet.appendChild(mkField("Shift date",shiftSel));
+      jobSel.addEventListener("change",()=>{
+        shiftSel.innerHTML="";
+        const opt=document.createElement("option");opt.value="";opt.textContent="— Select shift —";shiftSel.appendChild(opt);
+        myShifts.filter(s=>s.job.id===jobSel.value).forEach(s=>{
+          const o=document.createElement("option");o.value=s.shift.id;
+          const d=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+          o.textContent=`${d} ${s.shift.startTime}–${s.shift.endTime}`;
+          shiftSel.appendChild(o);
+        });
+      });
+    }
+
+    // Works completed
+    const worksIn=document.createElement("textarea");
+    worksIn.placeholder="Describe works carried out on this shift...";
+    worksIn.style.cssText="width:100%;min-height:80px;font-size:14px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(mkField("Works Completed *",worksIn));
+
+    // Hours
+    const hoursIn=mkInput("number","e.g. 10");hoursIn.min="0";hoursIn.max="24";hoursIn.step="0.5";
+    sheet.appendChild(mkField("Hours worked",hoursIn));
+
+    // Lunch
+    const lunchSel=mkSelect([["0","No lunch break"],["0.5","30 min"],["1","1 hour"],["1.5","1.5 hours"],["2","2 hours"]]);
+    sheet.appendChild(mkField("Lunch break",lunchSel));
+
+    // Travel + LAFHA
+    const travelIn=mkInput("number","0");travelIn.min="0";travelIn.step="0.5";
+    sheet.appendChild(mkField("Travel hours (if applicable)",travelIn));
+    const lafhaSel=mkSelect([["no","No"],["yes","Yes"]]);
+    sheet.appendChild(mkField("LAFHA",lafhaSel));
+
+    // Comments
+    const commentsIn=document.createElement("textarea");
+    commentsIn.placeholder="Any variations, issues or additional notes...";
+    commentsIn.style.cssText="width:100%;min-height:60px;font-size:14px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(mkField("Comments / Variations",commentsIn));
+
+    // Client name + sig
+    const clientNameIn=mkInput("text","Client representative name");
+    sheet.appendChild(mkField("Client name *",clientNameIn));
+    const cSigLbl=document.createElement("label");cSigLbl.textContent="Client signature *";cSigLbl.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+    sheet.appendChild(cSigLbl);
+    const cSigWrap=document.createElement("div");cSigWrap.style.cssText="border:1px solid var(--bdr);border-radius:var(--radius);background:#fff;position:relative;margin-bottom:14px";
+    const cCanvas=document.createElement("canvas");cCanvas.width=600;cCanvas.height=120;cCanvas.style.cssText="display:block;width:100%;height:120px;cursor:crosshair;touch-action:none;border-radius:var(--radius)";
+    const cClear=document.createElement("button");cClear.textContent="Clear";cClear.style.cssText="position:absolute;top:6px;right:8px;background:rgba(255,255,255,.9);border:1px solid var(--bdr);border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:inherit;color:var(--mut)";
+    cSigWrap.appendChild(cCanvas);cSigWrap.appendChild(cClear);sheet.appendChild(cSigWrap);
+    const cSig=mkSigPad(cCanvas);cClear.onclick=()=>cSig.clear();
+
+    // Supervisor sig
+    const supNameIn=mkInput("text","Supervisor name");supNameIn.value=profile.name||"";
+    sheet.appendChild(mkField("Supervisor name *",supNameIn));
+    const sSigLbl=document.createElement("label");sSigLbl.textContent="Supervisor signature *";sSigLbl.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+    sheet.appendChild(sSigLbl);
+    const sSigWrap=document.createElement("div");sSigWrap.style.cssText="border:1px solid var(--bdr);border-radius:var(--radius);background:#fff;position:relative;margin-bottom:14px";
+    const sCanvas=document.createElement("canvas");sCanvas.width=600;sCanvas.height=120;sCanvas.style.cssText="display:block;width:100%;height:120px;cursor:crosshair;touch-action:none;border-radius:var(--radius)";
+    const sClear=document.createElement("button");sClear.textContent="Clear";sClear.style.cssText="position:absolute;top:6px;right:8px;background:rgba(255,255,255,.9);border:1px solid var(--bdr);border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:inherit;color:var(--mut)";
+    sSigWrap.appendChild(sCanvas);sSigWrap.appendChild(sClear);sheet.appendChild(sSigWrap);
+    const sSig=mkSigPad(sCanvas);sClear.onclick=()=>sSig.clear();
+
+    // Submit + Save Draft buttons
+    const btnRow=document.createElement("div");btnRow.style.cssText="display:flex;gap:8px;margin-top:4px";
+
+    const saveDraftBtn=document.createElement("button");
+    saveDraftBtn.className="btn-s";
+    saveDraftBtn.textContent="💾 Save Draft";
+    saveDraftBtn.style.cssText+="flex:1";
+    saveDraftBtn.onclick=()=>{
+      if(!jobSel.value||!shiftSel.value){alert("Please select a job and shift before saving");return;}
+      const draftKey="docket_draft_"+profile.name.replace(/\s+/g,"_");
+      const draft={
+        jobId:jobSel.value,
+        shiftId:shiftSel.value,
+        worksCompleted:worksIn.value,
+        hours:hoursIn.value,
+        lunch:lunchSel.value,
+        travel:travelIn.value,
+        lafha:lafhaSel.value,
+        comments:commentsIn.value,
+        clientName:clientNameIn.value,
+        supName:supNameIn.value,
+        savedAt:new Date().toISOString()
+      };
+      localStorage.setItem(draftKey,JSON.stringify(draft));
+      saveDraftBtn.textContent="✓ Saved";
+      saveDraftBtn.style.background="var(--green)";
+      saveDraftBtn.style.color="#fff";
+      saveDraftBtn.style.borderColor="var(--green)";
+      setTimeout(()=>{
+        saveDraftBtn.textContent="💾 Save Draft";
+        saveDraftBtn.style.background="";
+        saveDraftBtn.style.color="";
+        saveDraftBtn.style.borderColor="";
+      },2000);
+    };
+
+    const submitBtn=document.createElement("button");submitBtn.className="btn-p";submitBtn.textContent="Submit Docket";
+    submitBtn.style.cssText+="flex:2";
+    submitBtn.onclick=async()=>{
+      if(!jobSel.value||!shiftSel.value){alert("Please select a job and shift");return;}
+      if(!worksIn.value.trim()){alert("Please describe the works completed");return;}
+      if(!clientNameIn.value.trim()){alert("Please enter the client representative name");return;}
+      if(cSig.isEmpty()){alert("Please obtain the client signature");return;}
+      if(!supNameIn.value.trim()){alert("Please enter the supervisor name");return;}
+      if(sSig.isEmpty()){alert("Please sign as supervisor");return;}
+      submitBtn.disabled=true;submitBtn.textContent="Submitting...";
+
+      const selectedShift=myShifts.find(s=>s.shift.id===shiftSel.value);
+      const lunch=parseFloat(lunchSel.value)||0;
+      const grossH=parseFloat(hoursIn.value)||0;
+      const netH=Math.max(0,grossH-lunch);
+
+      const docket={
+        id:uid(),
+        jobId:selectedShift.job.id,shiftId:selectedShift.shift.id,
+        createdAt:new Date().toISOString(),
+        submittedFrom:"staff-portal",
+        jobName:selectedShift.job.name,jobNumber:selectedShift.job.jobNumber||"",
+        jobPO:selectedShift.job.po||"",client:selectedShift.job.client||"",
+        siteAddress:selectedShift.job.siteAddress||"",
+        shiftDate:selectedShift.shift.date,shiftDay:selectedShift.shift.dayLabel,
+        shiftStart:selectedShift.shift.startTime,shiftEnd:selectedShift.shift.endTime,
+        worksCompleted:worksIn.value.trim(),
+        crewHours:[{id:"manual",name:profile.name,role:profile.role||"",hours:grossH,lunchHrs:lunch,hoursNet:netH}],
+        travelHours:parseFloat(travelIn.value)||0,
+        lafha:lafhaSel.value==="yes",
+        comments:commentsIn.value.trim(),
+        clientRepName:clientNameIn.value.trim(),
+        clientSigData:cSig.toDataURL(),
+        supName:supNameIn.value.trim(),
+        supSigData:sSig.toDataURL(),
+      };
+
+      try{
+        const blob=new Blob([JSON.stringify(docket)],{type:"application/json"});
+        const r=await fetch(`${SB_URL}/storage/v1/object/dockets/${docket.id}.json`,{
+          method:"POST",headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","x-upsert":"true"},body:blob
+        });
+        if(!r.ok)throw new Error(await r.text());
+        // Clear draft on successful submit
+        const draftKey="docket_draft_"+profile.name.replace(/\s+/g,"_");
+        localStorage.removeItem(draftKey);
+        close();currentView="dockets";renderApp();
+        alert("Docket submitted successfully ✓");
+      }catch(e){
+        submitBtn.disabled=false;submitBtn.textContent="Submit Docket";
+        alert("Failed to submit — check connection and try again.\n"+e.message);
+      }
+    };
+
+    btnRow.appendChild(saveDraftBtn);
+    btnRow.appendChild(submitBtn);
+    sheet.appendChild(btnRow);
+
+    // ── Auto-restore draft if one exists ─────────────────────────────
+    const draftKey="docket_draft_"+profile.name.replace(/\s+/g,"_");
+    const savedDraft=localStorage.getItem(draftKey);
+    if(savedDraft&&!preSelected){
+      try{
+        const draft=JSON.parse(savedDraft);
+        const savedDate=new Date(draft.savedAt).toLocaleString("en-AU",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"});
+        const banner=document.createElement("div");
+        banner.style.cssText="background:var(--amber-bg);border:1px solid #f0d080;border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--amber);display:flex;align-items:center;justify-content:space-between;gap:8px";
+        banner.innerHTML=`<span>📋 Draft saved ${savedDate}</span>`;
+        const restoreBtn=document.createElement("button");
+        restoreBtn.style.cssText="background:var(--amber);color:#fff;border:none;border-radius:4px;padding:4px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap";
+        restoreBtn.textContent="Restore";
+        restoreBtn.onclick=()=>{
+          // Restore job selection
+          if(draft.jobId){
+            jobSel.value=draft.jobId;
+            jobSel.dispatchEvent(new Event("change"));
+            setTimeout(()=>{
+              if(draft.shiftId) shiftSel.value=draft.shiftId;
+            },100);
+          }
+          worksIn.value=draft.worksCompleted||"";
+          hoursIn.value=draft.hours||"";
+          lunchSel.value=draft.lunch||"0";
+          travelIn.value=draft.travel||"0";
+          lafhaSel.value=draft.lafha||"no";
+          commentsIn.value=draft.comments||"";
+          clientNameIn.value=draft.clientName||"";
+          supNameIn.value=draft.supName||"";
+          banner.remove();
+          toast("Draft restored ✓");
+        };
+        const discardBtn=document.createElement("button");
+        discardBtn.style.cssText="background:transparent;border:none;color:var(--mut);font-size:18px;cursor:pointer;padding:0 4px;line-height:1";
+        discardBtn.textContent="×";
+        discardBtn.onclick=()=>{localStorage.removeItem(draftKey);banner.remove();};
+        banner.appendChild(restoreBtn);
+        banner.appendChild(discardBtn);
+        sheet.insertBefore(banner,sheet.firstChild);
+      }catch(e){localStorage.removeItem(draftKey);}
+    }
+  });
+}
+
+// ── Equipment & Asset Report ──────────────────────────────────────────
+function showEquipmentReportForm(){
+  showModal("Equipment & Asset Report",(sheet,close)=>{
+
+    sheet.innerHTML+=`<div style="background:#eaf4fb;border:1px solid #a9cce3;border-radius:var(--radius);padding:10px 14px;margin-bottom:16px;font-size:12px;color:#1a5276;line-height:1.5">
+      Complete after each welding shift. Report all equipment condition, damage, missing items and consumables that need restocking.
+    </div>`;
+
+    // Job + shift selector
+    const uniqueJobs=[...new Map(myShifts.map(s=>[s.job.id,s.job])).values()];
+    const jobSel=mkSelect([["","— Select job —"],...uniqueJobs.map(j=>[j.id,`${j.jobNumber||""} ${j.name}`.trim()])]);
+    sheet.appendChild(mkField("Job *",jobSel));
+    const shiftSel=mkSelect([["","— Select shift —"]]);
+    sheet.appendChild(mkField("Shift date *",shiftSel));
+    jobSel.addEventListener("change",()=>{
+      shiftSel.innerHTML="";
+      const opt=document.createElement("option");opt.value="";opt.textContent="— Select shift —";shiftSel.appendChild(opt);
+      myShifts.filter(s=>s.job.id===jobSel.value).forEach(s=>{
+        const o=document.createElement("option");o.value=s.shift.id;
+        const d=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+        o.textContent=`${d} — ${s.shift.startTime}–${s.shift.endTime}`;
+        shiftSel.appendChild(o);
+      });
+    });
+
+    // ── Section: Equipment Overall Condition ─────────────────────────
+    const secDivider=(title)=>{
+      const d=document.createElement("div");
+      d.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;padding:10px 0 8px;border-top:1px solid var(--bdr);margin-top:4px";
+      d.textContent=title;sheet.appendChild(d);
+    };
+
+    secDivider("Equipment Overall Condition");
+    const equipItems=[
+      {id:"welding_hardware",label:"Welding Hardware (moulds, clamps, risers, collars)"},
+      {id:"gas_equipment",label:"Gas Equipment (hoses, regulators, torches)"},
+      {id:"profile_grinder",label:"Profile Grinder & Grinding Stones"},
+      {id:"rail_saw",label:"Rail Saw & Blades"},
+      {id:"power_tools",label:"Power Tools (rail saw, cut-off tools, drills)"},
+      {id:"consumable_kit",label:"Consumable Kit / Portion Packs / Startweld"},
+      {id:"transport_equipment",label:"Transport / Storage Equipment (ute, trailer)"},
+      {id:"ppe",label:"PPE (welding shields, gloves, protective clothing)"},
+    ];
+
+    const conditionMap={};
+    equipItems.forEach(item=>{
+      const row=document.createElement("div");
+      row.style.cssText="background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px";
+      const lbl=document.createElement("div");
+      lbl.style.cssText="font-size:13px;font-weight:600;color:var(--txt);margin-bottom:8px";
+      lbl.textContent=item.label;
+      const btnRow=document.createElement("div");
+      btnRow.style.cssText="display:flex;gap:6px;flex-wrap:wrap";
+      let selected="good";
+      const conditions=[
+        {id:"good",label:"✓ Good",bg:"#fff3ee",color:"#1a6b2e",border:"#a9d5b0"},
+        {id:"damaged",label:"⚠ Damaged",bg:"#fff8e1",color:"#c47a0a",border:"#f0d080"},
+        {id:"service",label:"🔧 Needs Service",bg:"#fdf0f0",color:"#c0392b",border:"#f5c6c2"},
+        {id:"missing",label:"✗ Missing",bg:"#f5eef8",color:"#5c2d82",border:"#d7bde2"},
+      ];
+      function refreshCond(){
+        btnRow.innerHTML="";
+        conditions.forEach(c=>{
+          const b=document.createElement("button");
+          b.style.cssText=`padding:5px 10px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid ${selected===c.id?c.border:"var(--bdr)"};background:${selected===c.id?c.bg:"var(--bg2)"};color:${selected===c.id?c.color:"var(--mut)"};font-family:inherit`;
+          b.textContent=c.label;
+          b.onclick=()=>{selected=c.id;conditionMap[item.id]=c.id;refreshCond();};
+          btnRow.appendChild(b);
+        });
+      }
+      conditionMap[item.id]="good";
+      refreshCond();
+      row.appendChild(lbl);row.appendChild(btnRow);
+      sheet.appendChild(row);
+    });
+
+    // ── Section: Damage Detail ───────────────────────────────────────
+    secDivider("Damage Detail");
+    const damageIn=document.createElement("textarea");
+    damageIn.placeholder="Describe any damaged equipment — what is it, how was it damaged, severity...";
+    damageIn.style.cssText="width:100%;min-height:70px;font-size:13px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(damageIn);
+
+    // ── Section: Missing Equipment ───────────────────────────────────
+    secDivider("Missing Equipment / Tools");
+    const missingIn=document.createElement("textarea");
+    missingIn.placeholder="List any missing items — tools, hardware, PPE etc...";
+    missingIn.style.cssText="width:100%;min-height:60px;font-size:13px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(missingIn);
+
+    // ── Section: Consumables ─────────────────────────────────────────
+    secDivider("Consumables Requiring Replacement");
+    const consumableItems=[
+      "Startweld Capsules","Preheating Gas (LPG)","Oxygen",
+      "Profile Grinding Stones","Rail Saw Blades","Grinding Discs","Cut-off Discs",
+      "Mould Sand / Backing","Other"
+    ];
+    const consumableChecks={};
+    const consumableGrid=document.createElement("div");
+    consumableGrid.style.cssText="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px";
+    consumableItems.forEach(item=>{
+      const row=document.createElement("div");
+      row.style.cssText="display:flex;align-items:center;gap:8px;background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--radius);padding:8px 10px;cursor:pointer";
+      const cb=document.createElement("input");cb.type="checkbox";cb.style.cssText="width:15px;height:15px;cursor:pointer;accent-color:var(--mid);flex-shrink:0";
+      const lbl=document.createElement("span");lbl.style.cssText="font-size:12px;color:var(--txt);font-weight:500";lbl.textContent=item;
+      consumableChecks[item]=cb;
+      row.appendChild(cb);row.appendChild(lbl);
+      row.addEventListener("click",e=>{if(e.target!==cb)cb.checked=!cb.checked;});
+      consumableGrid.appendChild(row);
+    });
+    sheet.appendChild(consumableGrid);
+    const consumableNotesIn=mkInput("text","Any quantity notes or additional consumables...");
+    consumableNotesIn.style.marginTop="8px";
+    sheet.appendChild(consumableNotesIn);
+
+    // ── Section: Service Required ────────────────────────────────────
+    secDivider("Equipment Requiring Service / Maintenance");
+    const serviceIn=document.createElement("textarea");
+    serviceIn.placeholder="List equipment that needs servicing, calibration or repair — include equipment name and description of issue...";
+    serviceIn.style.cssText="width:100%;min-height:70px;font-size:13px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(serviceIn);
+
+    // ── Section: General Notes ───────────────────────────────────────
+    secDivider("General Notes");
+    const notesIn=document.createElement("textarea");
+    notesIn.placeholder="Any other observations, incidents or information relevant to equipment and assets...";
+    notesIn.style.cssText="width:100%;min-height:60px;font-size:13px;font-family:inherit;resize:vertical;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--radius);color:var(--txt);padding:10px 12px;outline:none";
+    sheet.appendChild(notesIn);
+
+    // ── Signature ────────────────────────────────────────────────────
+    secDivider("Welder Signature");
+    const sigLbl=document.createElement("label");sigLbl.textContent="Sign to confirm this report is accurate";sigLbl.style.cssText="font-size:11px;font-weight:600;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+    sheet.appendChild(sigLbl);
+    const sigWrap=document.createElement("div");sigWrap.style.cssText="border:1px solid var(--bdr);border-radius:var(--radius);background:#fff;position:relative;margin-bottom:14px";
+    const canvas=document.createElement("canvas");canvas.width=600;canvas.height=120;canvas.style.cssText="display:block;width:100%;height:120px;cursor:crosshair;touch-action:none;border-radius:var(--radius)";
+    const clearBtn=document.createElement("button");clearBtn.textContent="Clear";clearBtn.style.cssText="position:absolute;top:6px;right:8px;background:rgba(255,255,255,.9);border:1px solid var(--bdr);border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:inherit;color:var(--mut)";
+    sigWrap.appendChild(canvas);sigWrap.appendChild(clearBtn);
+    sheet.appendChild(sigWrap);
+    const sig=mkSigPad(canvas);clearBtn.onclick=()=>sig.clear();
+
+    // ── Submit ───────────────────────────────────────────────────────
+    const submitBtn=document.createElement("button");submitBtn.className="btn-p";submitBtn.textContent="Submit Report";
+    submitBtn.onclick=async()=>{
+      if(!jobSel.value||!shiftSel.value){alert("Please select a job and shift");return;}
+      if(sig.isEmpty()){alert("Please sign the report before submitting");return;}
+      submitBtn.disabled=true;submitBtn.textContent="Submitting...";
+
+      const selectedShift=myShifts.find(s=>s.shift.id===shiftSel.value);
+      const consumablesNeeded=Object.entries(consumableChecks).filter(([k,v])=>v.checked).map(([k])=>k);
+
+      const report={
+        id:uid(),
+        type:"equipment-report",
+        jobId:selectedShift.job.id,shiftId:selectedShift.shift.id,
+        jobName:selectedShift.job.name,jobNumber:selectedShift.job.jobNumber||"",
+        shiftDate:selectedShift.shift.date,shiftDay:selectedShift.shift.dayLabel,
+        submittedBy:profile.name,submittedAt:new Date().toISOString(),
+        status:"pending",
+        equipmentConditions:conditionMap,
+        damageDetail:damageIn.value.trim(),
+        missingItems:missingIn.value.trim(),
+        consumablesNeeded,consumableNotes:consumableNotesIn.value.trim(),
+        serviceRequired:serviceIn.value.trim(),
+        notes:notesIn.value.trim(),
+        signature:sig.toDataURL(),
+      };
+
+      try{
+        const blob=new Blob([JSON.stringify(report)],{type:"application/json"});
+        const r=await fetch(`${SB_URL}/storage/v1/object/reports/${report.id}.json`,{
+          method:"POST",
+          headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","x-upsert":"true"},
+          body:blob
+        });
+        if(!r.ok)throw new Error(await r.text());
+        close();currentView="forms";renderApp();
+        alert("Report submitted successfully ✓");
+      }catch(e){
+        submitBtn.disabled=false;submitBtn.textContent="Submit Report";
+        alert("Failed to submit — check connection and try again.\n"+e.message);
+      }
+    };
+    sheet.appendChild(submitBtn);
+  });
+}
+
+// ── SWMS Sign-Off — TG-017 Welding & Rerailing ───────────────────────
+function showSWMSSignOffForm(){
+  showModal("SWMS Sign-Off — TG-017",(sheet,close)=>{
+
+    // Header
+    const hdr=document.createElement("div");
+    hdr.style.cssText="background:#141920;border-radius:var(--radius);padding:12px 16px;margin-bottom:14px;color:#fff";
+    hdr.innerHTML=`
+      <div style="font-size:13px;font-weight:800;margin-bottom:2px">TG-017 — SWMS Welding & Rerailing Activities</div>
+      <div style="font-size:11px;color:#ffb380">Taver Group Pty Ltd · Revision 1</div>`;
+    sheet.appendChild(hdr);
+
+    // Intro statement
+    const intro=document.createElement("div");
+    intro.style.cssText="background:#fff3ee;border:1px solid #a9d5b0;border-radius:var(--radius);padding:12px 14px;margin-bottom:14px;font-size:13px;color:#141920;line-height:1.6";
+    intro.innerHTML=`By signing this SWMS, I confirm that I have been <strong>briefed on</strong>, <strong>read</strong>, <strong>understood</strong> and will <strong>comply with</strong> the Safe Work Method Statement for Welding and Rerailing Activities (TG-017). I understand my responsibilities and the controls required for each work activity.`;
+    sheet.appendChild(intro);
+
+    // Job + shift
+    const uniqueJobs=[...new Map(myShifts.map(s=>[s.job.id,s.job])).values()];
+    const jobSel=mkSelect([["","— Select job —"],...uniqueJobs.map(j=>[j.id,`${j.jobNumber||""} ${j.name}`.trim()])]);
+    sheet.appendChild(mkField("Job *",jobSel));
+    const shiftSel=mkSelect([["","— Select shift —"]]);
+    sheet.appendChild(mkField("Shift date *",shiftSel));
+    jobSel.addEventListener("change",()=>{
+      shiftSel.innerHTML="";
+      const opt=document.createElement("option");opt.value="";opt.textContent="— Select shift —";shiftSel.appendChild(opt);
+      myShifts.filter(s=>s.job.id===jobSel.value).forEach(s=>{
+        const o=document.createElement("option");o.value=s.shift.id;
+        const d=new Date(s.shift.date+"T12:00:00").toLocaleDateString("en-AU",{weekday:"short",day:"2-digit",month:"short"});
+        o.textContent=`${d} ${s.shift.startTime}–${s.shift.endTime}`;
+        shiftSel.appendChild(o);
+      });
+    });
+
+    // SWMS Activities summary — collapsible
+    const actLabel=document.createElement("div");
+    actLabel.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;cursor:pointer";
+    actLabel.innerHTML=`<span>Work Activities Covered (20)</span><span id="swms-toggle" style="font-size:13px">▼ Show</span>`;
+    sheet.appendChild(actLabel);
+
+    const actList=document.createElement("div");
+    actList.style.cssText="display:none;background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--radius);padding:10px 14px;margin-bottom:14px;font-size:12px";
+    const activities=[
+      "1. Removing Clips and Clipping Up",
+      "2. Cutting Rail Using Rail Saw",
+      "3. Cutting Rail Using Oxy / LP Cutting Equipment",
+      "4. Spark Generation Activities",
+      "5. Front End Loaders Removing / Installing Rail",
+      "6. Dragging Rail",
+      "7. Unloading Welding & CWR Equipment",
+      "8. Preparing Equipment / Pre Heating Crucible (Thermic Process)",
+      "9. Preparing Bays",
+      "10. Removing Fishplates",
+      "11. Setting Rail Tensors",
+      "12. Performing Weld — Installing Wedges, Cutting Gap, Welding, Stripping, Shearing",
+      "13. Rail Head Grinding",
+      "14. Re-profile Ballast Shoulder / Boxing Up",
+      "15. Removing Clips",
+      "16. Removing Dogs / Lockspikes / Anchors",
+      "17. Lifting Closures (Rail)",
+      "18. Tamping of Sleepers",
+      "19. Installing Guard Rails",
+      "20. Track Certification"
+    ];
+    activities.forEach(a=>{
+      const row=document.createElement("div");
+      row.style.cssText="padding:4px 0;border-bottom:1px solid var(--bdr);color:var(--txt2);line-height:1.4";
+      row.textContent=a;
+      actList.appendChild(row);
+    });
+    sheet.appendChild(actList);
+    actLabel.onclick=()=>{
+      const hidden=actList.style.display==="none";
+      actList.style.display=hidden?"block":"none";
+      document.getElementById("swms-toggle").textContent=hidden?"▲ Hide":"▼ Show";
+    };
+
+    // PPE acknowledgement
+    const ppeDiv=document.createElement("div");
+    ppeDiv.style.cssText="background:#fff8e1;border:1px solid #f0d080;border-radius:var(--radius);padding:12px 14px;margin-bottom:14px";
+    ppeDiv.innerHTML=`<div style="font-size:11px;font-weight:700;color:#7a5500;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px">Required PPE — I confirm I have / will wear:</div>`;
+    const ppeItems=["Safety Boots","High Visibility Clothing","Hard Hat","Safety Glasses","Long Sleeve Shirt & Long Pants","Spats","Hearing Protection","Gloves (suitable for task)","Respiratory Protection (P2 Mask)","Sunscreen"];
+    const ppeChecks={};
+    const ppeGrid=document.createElement("div");
+    ppeGrid.style.cssText="display:grid;grid-template-columns:1fr 1fr;gap:6px";
+    ppeItems.forEach(item=>{
+      const row=document.createElement("div");
+      row.style.cssText="display:flex;align-items:center;gap:7px;cursor:pointer";
+      const cb=document.createElement("input");cb.type="checkbox";cb.style.cssText="width:15px;height:15px;cursor:pointer;accent-color:var(--mid);flex-shrink:0";
+      const lbl=document.createElement("span");lbl.style.cssText="font-size:12px;color:var(--txt)";lbl.textContent=item;
+      ppeChecks[item]=cb;
+      row.appendChild(cb);row.appendChild(lbl);
+      row.addEventListener("click",e=>{if(e.target!==cb)cb.checked=!cb.checked;});
+      ppeGrid.appendChild(row);
+    });
+    ppeDiv.appendChild(ppeGrid);
+    sheet.appendChild(ppeDiv);
+
+    // Acknowledgement checkboxes
+    const ackDiv=document.createElement("div");
+    ackDiv.style.cssText="background:var(--bg3);border:1px solid var(--bdr);border-radius:var(--radius);padding:12px 14px;margin-bottom:14px";
+    ackDiv.innerHTML=`<div style="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;margin-bottom:10px">I acknowledge that I:</div>`;
+    const acks=[
+      "Have been briefed on this SWMS prior to commencing work",
+      "Have read and understood all work activities and their hazards",
+      "Understand and will implement all safety controls listed",
+      "Will stop work and notify the site supervisor if new hazards are identified",
+      "Understand that non-compliance with this SWMS may result in work being stopped",
+      "Have had the opportunity to ask questions about this SWMS"
+    ];
+    const ackChecks=[];
+    acks.forEach(ack=>{
+      const row=document.createElement("div");
+      row.style.cssText="display:flex;align-items:flex-start;gap:9px;margin-bottom:8px;cursor:pointer";
+      const cb=document.createElement("input");cb.type="checkbox";cb.style.cssText="width:16px;height:16px;cursor:pointer;accent-color:var(--mid);flex-shrink:0;margin-top:1px";
+      const lbl=document.createElement("span");lbl.style.cssText="font-size:13px;color:var(--txt);line-height:1.5";lbl.textContent=ack;
+      ackChecks.push(cb);
+      row.appendChild(cb);row.appendChild(lbl);
+      row.addEventListener("click",e=>{if(e.target!==cb)cb.checked=!cb.checked;});
+      ackDiv.appendChild(row);
+    });
+    sheet.appendChild(ackDiv);
+
+    // Trade/role field
+    const tradeIn=mkInput("text","e.g. Welder, Track Superintendent");tradeIn.value=profile.role||"";
+    sheet.appendChild(mkField("My trade / role on this shift *",tradeIn));
+
+    // Signature
+    const sigLbl=document.createElement("label");sigLbl.textContent="Signature *";sigLbl.style.cssText="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.7px;display:block;margin-bottom:5px";
+    sheet.appendChild(sigLbl);
+    const sigWrap=document.createElement("div");sigWrap.style.cssText="border:1px solid var(--bdr);border-radius:var(--radius);background:#fff;position:relative;margin-bottom:14px";
+    const canvas=document.createElement("canvas");canvas.width=600;canvas.height=120;canvas.style.cssText="display:block;width:100%;height:120px;cursor:crosshair;touch-action:none;border-radius:var(--radius)";
+    const clearBtn=document.createElement("button");clearBtn.textContent="Clear";clearBtn.style.cssText="position:absolute;top:6px;right:8px;background:rgba(255,255,255,.9);border:1px solid var(--bdr);border-radius:4px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:inherit;color:var(--mut)";
+    sigWrap.appendChild(canvas);sigWrap.appendChild(clearBtn);
+    sheet.appendChild(sigWrap);
+    const sig=mkSigPad(canvas);clearBtn.onclick=()=>sig.clear();
+
+    // Submit
+    const submitBtn=document.createElement("button");submitBtn.className="btn-p";submitBtn.textContent="Submit SWMS Sign-Off";
+    submitBtn.onclick=async()=>{
+      if(!jobSel.value||!shiftSel.value){alert("Please select a job and shift");return;}
+      if(!tradeIn.value.trim()){alert("Please enter your trade / role");return;}
+      const uncheckedAck=ackChecks.filter(cb=>!cb.checked);
+      if(uncheckedAck.length>0){alert("Please confirm all acknowledgements before signing");return;}
+      if(sig.isEmpty()){alert("Please sign before submitting");return;}
+      submitBtn.disabled=true;submitBtn.textContent="Submitting...";
+
+      const selectedShift=myShifts.find(s=>s.shift.id===shiftSel.value);
+      const ppeConfirmed=Object.entries(ppeChecks).filter(([k,v])=>v.checked).map(([k])=>k);
+
+      const record={
+        id:uid(),
+        type:"swms-signoff",
+        swmsRef:"TG-017",
+        swmsTitle:"Welding and Rerailing Activities",
+        jobId:selectedShift.job.id,shiftId:selectedShift.shift.id,
+        jobName:selectedShift.job.name,jobNumber:selectedShift.job.jobNumber||"",
+        shiftDate:selectedShift.shift.date,shiftDay:selectedShift.shift.dayLabel,
+        submittedBy:profile.name,trade:tradeIn.value.trim(),
+        submittedAt:new Date().toISOString(),
+        status:"pending",
+        ppeConfirmed,
+        acknowledgementsConfirmed:ackChecks.every(cb=>cb.checked),
+        signature:sig.toDataURL()
+      };
+
+      try{
+        const blob=new Blob([JSON.stringify(record)],{type:"application/json"});
+        const r=await fetch(`${SB_URL}/storage/v1/object/reports/${record.id}.json`,{
+          method:"POST",
+          headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","x-upsert":"true"},
+          body:blob
+        });
+        if(!r.ok)throw new Error(await r.text());
+        close();renderApp();
+        alert("SWMS Sign-Off submitted ✓");
+      }catch(e){
+        submitBtn.disabled=false;submitBtn.textContent="Submit SWMS Sign-Off";
+        alert("Failed to submit — check connection.\n"+e.message);
+      }
+    };
+    sheet.appendChild(submitBtn);
+  });
+}
+
+// ── Change PIN ────────────────────────────────────────────────────────
+function showChangePIN(){
+  showModal("Change My PIN",(sheet,close)=>{
+    sheet.appendChild(Object.assign(document.createElement("div"),{
+      style:"font-size:13px;color:var(--mut);margin-bottom:16px;line-height:1.6",
+      textContent:"Set a personal PIN that only you know. Must be 4-6 digits."
+    }));
+
+    const newPin=mkInput("tel","New PIN (4-6 digits)");
+    newPin.maxLength=6;
+    newPin.style.cssText+="letter-spacing:6px;font-size:22px;font-weight:700;width:160px";
+    newPin.addEventListener("input",()=>newPin.value=newPin.value.replace(/[^0-9]/g,""));
+
+    const confirmPin=mkInput("tel","Confirm new PIN");
+    confirmPin.maxLength=6;
+    confirmPin.style.cssText+="letter-spacing:6px;font-size:22px;font-weight:700;width:160px";
+    confirmPin.addEventListener("input",()=>confirmPin.value=confirmPin.value.replace(/[^0-9]/g,""));
+
+    sheet.appendChild(mkField("New PIN",newPin));
+    sheet.appendChild(mkField("Confirm PIN",confirmPin));
+
+    const errEl=document.createElement("div");
+    errEl.style.cssText="color:var(--danger);font-size:12px;margin-bottom:8px;min-height:16px";
+    sheet.appendChild(errEl);
+
+    const saveBtn=document.createElement("button");
+    saveBtn.className="btn-p";saveBtn.textContent="Save PIN";
+    saveBtn.onclick=async()=>{
+      const p1=newPin.value.trim();
+      const p2=confirmPin.value.trim();
+      if(p1.length<4){errEl.textContent="PIN must be at least 4 digits";return;}
+      if(p1!==p2){errEl.textContent="PINs don't match — try again";confirmPin.value="";confirmPin.focus();return;}
+      saveBtn.disabled=true;saveBtn.textContent="Saving...";
+      // Update in Supabase
+      try{
+        const r=await fetch(`${SB_URL}/rest/v1/staff?name=eq.${encodeURIComponent(profile.name)}`,{
+          method:"PATCH",
+          headers:{"apikey":SB_KEY,"Authorization":"Bearer "+SB_KEY,"Content-Type":"application/json","Prefer":"return=minimal"},
+          body:JSON.stringify({pin:p1})
+        });
+        if(!r.ok)throw new Error(await r.text());
+        close();
+        alert(`✓ PIN updated to ${p1} — use this next time you log in`);
+      }catch(e){
+        errEl.textContent="Failed to save — try again";
+        saveBtn.disabled=false;saveBtn.textContent="Save PIN";
+      }
+    };
+    sheet.appendChild(saveBtn);
+  });
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────
+async function boot(){
+  // Check for stored PIN session
+  try{
+    const stored=localStorage.getItem("taver_pin_session");
+    if(stored){
+      const s=JSON.parse(stored);
+      if(s.name){  // permanent session — only cleared on sign out
+        profile={name:s.name,role:s.role||""};
+        showLoadingScreen();
+        [myShifts,myTimesheets]=await Promise.all([
+          loadMyData(SB_KEY,s.name),
+          loadMyTimesheets(SB_KEY,s.name)
+        ]);
+        await loadConfirmations();
+        renderApp();
+        return;
+      }
+    }
+  }catch{}
+  // No valid session — show PIN login
+  showLoginScreen();
+}
+
+boot();
+</script>
+</body>
+</html>
